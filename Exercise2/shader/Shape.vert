@@ -20,7 +20,6 @@ void main()
 	// Transform the normal vector using the normal matrix
 	vec3 transformedNormal = normalize(normalMatrix * vNormal);
 
-
 	objectColor = vColor;
 
 	// TODO: uncomment this line to display the normals as color

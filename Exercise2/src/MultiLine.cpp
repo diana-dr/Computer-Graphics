@@ -11,10 +11,15 @@ namespace cgCourse
 	{
 		// TODO: initialize positions, colors, and normals
 		// Set the positions of the vertices
-		positions = _vertices;
+		float length = 0.35;
 
-		// Set the colors to white
-		colors.resize(_vertices.size(), glm::vec3(1.0f, 1.0f, 1.0f));
+		for (int i = 0; i < _vertices.size(); i++) {
+			positions.push_back(_vertices[i]);
+			positions.push_back(_vertices[i] + length * _normals[i]);
+
+			colors.push_back({ 1.0f, 1.0f, 0 });
+			colors.push_back({ 1.0f, 1.0f, 0 });
+		}
 
 		// Set the normals to the given values
 		normals = _normals;

@@ -77,7 +77,8 @@ namespace cgCourse
 
 	void Shape::setPosition(glm::vec3 _pos)
 	{
-		objectPosition = _pos;
+		// Set the position of the center of the shape
+		translationMatrix = glm::translate(glm::mat4(1), _pos);
 		calculateModelMatrix();
 	}
 

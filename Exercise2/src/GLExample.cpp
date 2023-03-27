@@ -10,7 +10,7 @@ namespace cgCourse
 	{
 		// Framebuffer size and window size may be different in high-DPI displays
 		// setup camera with standard view (static for our case)
-		cam.create(	getFramebufferSize(),
+		cam.create(getFramebufferSize(),
 					glm::vec3(3, 3, -3),
 					glm::vec3(0, 0, 0),
 					glm::vec3(0, 1, 0)
@@ -26,15 +26,15 @@ namespace cgCourse
 		
 		// transform the cube
 		cube->setPosition(glm::vec3(-2.5, 0.5, 1.5));
-		cube->setScaling(glm::vec3(0.5, 0.5, 0.5));
+		cube->setScaling(glm::vec3(1.0, 1.0, 1.0));
 
 		torus = std::make_shared<Torus>();
 		if(!torus->createVertexArray(0, 1, 2))
 			return false;
 
 		// TODO: transform the torus
-		torus->setPosition(glm::vec3(3.0, 0.5, -3.0));
-		torus->setScaling(glm::vec3(1.0, 1.0, 1.0));
+		torus->setPosition(glm::vec3(0.5, -1.0, 1.0));
+		torus->setScaling(glm::vec3(1.5, 1.5, 1.5));
 
 		// Init multiline field for normals of objects
 		normalsTorus = std::make_shared<MultiLine>(torus->positions, torus->normals);
@@ -49,8 +49,8 @@ namespace cgCourse
 		// TODO: spin animation for the cube and the torus
 		float time = glfwGetTime();
 		float angle = time * glm::radians(100.0f);
-		cube->setRotation(angle, glm::vec3(1.0f, 1.0f, 0.0f));
-		torus->setRotation(angle, glm::vec3(0.0f, 1.0f, 1.0f));
+		cube->setRotation(angle, glm::vec3(0.4f, 1.0f, 0.8f));
+		torus->setRotation(angle, glm::vec3(1.0f, 0.8f, 0.4f));
 		return true;
 	}
 
@@ -99,7 +99,6 @@ namespace cgCourse
 		torus->draw();
 
 		programForShape->unbind();
-
 
 		if(!drawTorusNormals) return;
 
