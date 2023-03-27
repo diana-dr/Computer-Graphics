@@ -1,0 +1,3 @@
+C:/Users/Shlok Joshi/Desktop/Computer Graphics/Exercise2/build/CMakeFiles/exercise.dir
+C:/Users/Shlok Joshi/Desktop/Computer Graphics/Exercise2/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/Shlok Joshi/Desktop/Computer Graphics/Exercise2/build/CMakeFiles/ZERO_CHECK.dir
