@@ -1,0 +1,4 @@
+/Users/dianadragos/Desktop/Computer Graphics/Exercise3/build/CMakeFiles/exercise_3.dir
+/Users/dianadragos/Desktop/Computer Graphics/Exercise3/build/CMakeFiles/ALL_BUILD.dir
+/Users/dianadragos/Desktop/Computer Graphics/Exercise3/build/CMakeFiles/ZERO_CHECK.dir
+/Users/dianadragos/Desktop/Computer Graphics/Exercise3/build/imgui/CMakeFiles/imgui.dir
