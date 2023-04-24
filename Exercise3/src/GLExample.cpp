@@ -70,18 +70,20 @@ namespace cgCourse
 		 *      already in this class for this purpose.
 		 */
 		cubetex = std::make_shared<Texture>();
-		cubetex->loadFromFile(std::string(RES_DIR) + "/container.png");
-        // ...
-//         cubetexSpec = std::make_shared<Texture>();
-//         cubetexSpec->loadFromFile(std::string(RES_DIR) + "/container_specular.png");
         cubetexNormal = std::make_shared<Texture>();
+        cubetexSpec = std::make_shared<Texture>();
+
+        cubetex->loadFromFile(std::string(RES_DIR) + "/container.png");
         cubetexNormal->loadFromFile(std::string(RES_DIR) + "/container_normal.jpg");
+        cubetexSpec->loadFromFile(std::string(RES_DIR) + "/container_specular.png");
+
         torustex = std::make_shared<Texture>();
-        torustex->loadFromFile(std::string(RES_DIR) + "/brickwall.jpg");
-        torustexSpec = std::make_shared<Texture>();
-        torustexSpec->loadFromFile(std::string(RES_DIR) + "/brickwall_specular.jpg");
         torustexNormal = std::make_shared<Texture>();
+        torustexSpec = std::make_shared<Texture>();
+
+        torustex->loadFromFile(std::string(RES_DIR) + "/brickwall.jpg");
         torustexNormal->loadFromFile(std::string(RES_DIR) + "/brickwall_normal.jpg");
+        torustexSpec->loadFromFile(std::string(RES_DIR) + "/brickwall_specular.jpg");
         // TODO END
 		return true;
 	}
@@ -216,9 +218,23 @@ namespace cgCourse
         glActiveTexture(GL_TEXTURE1);
         glBindTexture(GL_TEXTURE_2D, cubetexNormal->getTexHandle());
 
+        glActiveTexture(GL_TEXTURE2);
+        glBindTexture(GL_TEXTURE_2D, cubetexSpec->getTexHandle());
+
         // Set the uniform variables in the shader to the correct texture units
         glUniform1i(programForTexturedShape->getUniformLocation("texMap"), 0);
         glUniform1i(programForTexturedShape->getUniformLocation("normalMap"), 1);
+        glUniform1i(programForTexturedShape->getUniformLocation("specMap"), 2);
+
+        // Material
+        GLfloat ambient[3] = {0.6f,0.6f,0.6f};
+        GLfloat diffuse[3] = {0.6f,0.6f,0.6f};
+        GLfloat specular[3] = {0.6f,0.6f,0.6f};
+
+        glUniform3fv(programForTexturedShape->getUniformLocation("material.ambient"),1,ambient);
+        glUniform3fv(programForTexturedShape->getUniformLocation("material.diffuse"),1,diffuse);
+        glUniform3fv(programForTexturedShape->getUniformLocation("material.specular"),1,specular);
+        glUniform1f(programForTexturedShape->getUniformLocation("material.shininess"),float(16.0));
 
         // End TODO
 
@@ -234,6 +250,9 @@ namespace cgCourse
         glBindTexture(GL_TEXTURE_2D, 0);
 
         glActiveTexture(GL_TEXTURE1);
+        glBindTexture(GL_TEXTURE_2D, 0);
+
+        glActiveTexture(GL_TEXTURE2);
         glBindTexture(GL_TEXTURE_2D, 0);
         // TODO END
 
@@ -258,9 +277,23 @@ namespace cgCourse
         glActiveTexture(GL_TEXTURE1);
         glBindTexture(GL_TEXTURE_2D, torustexNormal->getTexHandle());
 
+        glActiveTexture(GL_TEXTURE2);
+        glBindTexture(GL_TEXTURE_2D, torustexSpec->getTexHandle());
+
         // Set the uniform variables in the shader to the correct texture units
         glUniform1i(programForTexturedShape->getUniformLocation("texMap"), 0);
         glUniform1i(programForTexturedShape->getUniformLocation("normalMap"), 1);
+        glUniform1i(programForTexturedShape->getUniformLocation("specMap"), 2);
+
+        // Material
+        GLfloat ambient[3] = {0.6f,0.6f,0.6f};
+        GLfloat diffuse[3] = {0.6f,0.6f,0.6f};
+        GLfloat specular[3] = {0.6f,0.6f,0.6f};
+
+        glUniform3fv(programForTexturedShape->getUniformLocation("material.ambient"),1,ambient);
+        glUniform3fv(programForTexturedShape->getUniformLocation("material.diffuse"),1,diffuse);
+        glUniform3fv(programForTexturedShape->getUniformLocation("material.specular"),1,specular);
+        glUniform1f(programForTexturedShape->getUniformLocation("material.shininess"),float(16.0));
 
         // TODO END
 
@@ -276,6 +309,9 @@ namespace cgCourse
         glBindTexture(GL_TEXTURE_2D, 0);
 
         glActiveTexture(GL_TEXTURE1);
+        glBindTexture(GL_TEXTURE_2D, 0);
+
+        glActiveTexture(GL_TEXTURE2);
         glBindTexture(GL_TEXTURE_2D, 0);
 
         // End TODO

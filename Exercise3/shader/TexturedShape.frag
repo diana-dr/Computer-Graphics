@@ -17,6 +17,8 @@ in mat3 tbnMatrix;
 /* TODO Task 2 declare texture samplers here */
 uniform sampler2D texMap;
 uniform sampler2D normalMap;
+uniform sampler2D specMap;
+
 // END TODO
 
 /* TODO Task 2 fill these structs with values from outside the shader similar
@@ -55,14 +57,17 @@ void main()
     vec3 normal = texture(normalMap, texCoord).rgb;
     normal = normalize(normal * 2.0 - 1.0);
     normal = tbnMatrix * normal;
+
+    vec3 texColor = texture(texMap, texCoord).rgb;
+    vec3 specColor = texture(specMap, texCoord).rgb;
         
     vec3 lightDir = normalize(light.position - worldPos);
     vec3 viewDir = normalize(camPos - worldPos);
     float distance = length(light.position - worldPos);
 
-    vec3 specular = light.color * pow(max(0, dot(normal, normalize(lightDir + viewDir))), material.shininess) * material.specular;
-    vec3 diffuse = light.color * max(0, dot(normal, lightDir)) * material.diffuse / (distance * distance);
-    vec3 ambient = light.color * material.ambient;
+    vec3 specular = light.color * pow(max(0, dot(normal, normalize(lightDir + viewDir))), material.shininess) * material.specular * specColor;
+    vec3 diffuse = light.color * max(0, dot(normal, lightDir)) * material.diffuse / (distance * distance) * texColor;
+    vec3 ambient = light.color * material.ambient * texColor;
 
     color = objectColor * (ambient + specular + diffuse);
 	// TODO END

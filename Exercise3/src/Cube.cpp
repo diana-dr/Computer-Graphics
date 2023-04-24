@@ -116,14 +116,12 @@ namespace cgCourse
 //        for(int i = 0; i < positions.size(); i++) {
 //            texCoords.push_back(glm::vec2(0.0,0.0));
 //        }
-        for(int i = 0; i < positions.size(); i++) {
-            float x = positions[i].x;
-            float y = positions[i].y;
-            float z = positions[i].z;
-
-            // map x, y, z coordinates to texture coordinates
-            glm::vec2 texCoord(x, y);
-            texCoords.push_back(texCoord);
+        for (int i = 0; i < positions.size(); i += 4)
+        {
+            for (int j = 0; j < 4; j++)
+            {
+                texCoords.push_back(glm::vec2((j == 0 || j == 3), (j == 1 || j == 2)));
+            }
         }
 
         //TODO END
@@ -144,10 +142,12 @@ namespace cgCourse
 //            tangents.push_back(glm::vec3(0.0,0.0,0.0));
 //        }
         // tangents...
+        tangents.resize(positions.size());
+
         for(int i = 0; i < faces.size(); i++) {
-            int i1 = faces[i][0];
-            int i2 = faces[i][1];
-            int i3 = faces[i][2];
+            int i1 = faces[i].x;
+            int i2 = faces[i].y;
+            int i3 = faces[i].z;
 
             glm::vec3 v1 = positions[i1];
             glm::vec3 v2 = positions[i2];

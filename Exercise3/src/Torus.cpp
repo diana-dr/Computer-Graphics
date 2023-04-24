@@ -145,40 +145,28 @@ namespace cgCourse
         //       but you can do that how you want. Remember that you can do the repetition of
         //       the same texture either by setting the texture coordinates between 0.0 and 1.0
         //       or by using one of the texture functions, e.g. with GL_REPEAT
-        
-        float uStep = 1.0f / (float)(circleXZ.getSegments());
-        float vStep = 4.0f / (float)(circleXY.getVertices().size());
 
-        for(int i = 0; i <= circleXZ.getSegments(); i++) {
-            for(int j = 0; j <= circleXY.getVertices().size(); j++) {
-                float u = i * uStep;
-                float v = j * vStep;
-                texCoords.push_back(glm::vec2(u, v));
-            }
-        }
         
 //         for(int i = 0; i < positions.size(); i++) {
 //            texCoords.push_back(glm::vec2(0.0,0.0));
 //         }
 //        //texCoords...
-//        std::vector<glm::vec2> textureCoords;
-//        for (int j = 0; j < circleXZ.getSegments(); j++)
-//        {
-//            for (int i = 0; i < circleXY.getVertices().size(); i++)
-//            {
-//                // u is the angle around the torus
-//                float u = (float)j / (float)circleXZ.getSegments() * 4.0f;
-//                // v is the angle around the ring segment
-//                float v = (float)i / (float)circleXY.getSegments();
-//                textureCoords.push_back(glm::vec2(u, v));
-//            }
-//        }
+        std::vector<glm::vec2> textureCoords;
+        for (int j = 0; j < circleXZ.getSegments(); j++)
+        {
+            for (int i = 0; i < circleXY.getVertices().size(); i++)
+            {
+                float u = (float)j / (float)circleXZ.getSegments() * 4.0f;
+                float v = (float)i / (float)circleXY.getSegments();
+                textureCoords.push_back(glm::vec2(u, v));
+            }
+        }
 
         // set texture coordinates for vertices
-//        for (int i = 0; i < positions.size(); i++)
-//        {
-//            texCoords.push_back(textureCoords[i % textureCoords.size()]);
-//        }
+        for (int i = 0; i < positions.size(); i++)
+        {
+            texCoords.push_back(textureCoords[i % textureCoords.size()]);
+        }
 
         // END TODO
 
@@ -191,7 +179,9 @@ namespace cgCourse
 //        for(int i = 0; i < positions.size(); i++) {
 //            tangents.push_back(glm::vec3(0.0,0.0,0.0));
 //        }
-        for(int i = 0; i < faces.size(); i ++) {
+        tangents.resize(positions.size());
+        
+        for(int i = 0; i < faces.size(); i++) {
             int i1 = faces[i].x;
             int i2 = faces[i].y;
             int i3 = faces[i].z;

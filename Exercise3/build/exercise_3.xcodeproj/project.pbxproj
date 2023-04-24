@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
@@ -35,58 +35,24 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		07ED489A6D944390B43B3BD5 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks/OpenGL.framework */ = {isa = PBXBuildFile; fileRef = 9D6B404F1CE548588D2F7402 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks/OpenGL.framework */; };
-		0AF12320A906432FA66BA1C9 /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/imgui/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 381E19956CF24BC691ECE1A8 /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/imgui/CMakeLists.txt */; };
-		14958247C5FD4061B25980C2 /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/imgui/imgui_draw.cpp */ = {isa = PBXBuildFile; fileRef = 80C80ED41DEA448F978E9FBD /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/imgui/imgui_draw.cpp */; };
-		16A1844912E748459246D7F3 /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/src/Shape.cpp */ = {isa = PBXBuildFile; fileRef = E5550E49B93142C1B8E50090 /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/src/Shape.cpp */; };
-		17DDA86319144C77802883C6 /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 2D642FB5631A4158A6530A5B /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/CMakeLists.txt */; };
-		4BF0CC50BAE9463F9B557E15 /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/imgui/imgui_impl_glfw.cpp */ = {isa = PBXBuildFile; fileRef = F558B235BA4A4961BC2CDE15 /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/imgui/imgui_impl_glfw.cpp */; };
-		5252C005DFB6449E8DCD71FD /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/src/Torus.cpp */ = {isa = PBXBuildFile; fileRef = 04F6B3FD11BD49A6A9D70C17 /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/src/Torus.cpp */; };
-		68345BC6262245119DE06830 /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/imgui/imgui_tables.cpp */ = {isa = PBXBuildFile; fileRef = E13F7034EF36466B99786BBE /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/imgui/imgui_tables.cpp */; };
-		77D9E917C2F54731B7F4717A /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/src/main.cpp */ = {isa = PBXBuildFile; fileRef = 0023EFEE99444D318D43EA5B /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/src/main.cpp */; };
-		7FB812BD50CD48B3A3528100 /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/src/GLApp.cpp */ = {isa = PBXBuildFile; fileRef = 08C3BCDF95914DADA1A25C32 /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/src/GLApp.cpp */; };
-		932CBB533BBA4326A3E37BBC /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/imgui/imgui_impl_opengl3.cpp */ = {isa = PBXBuildFile; fileRef = 673D85D909334A3DB0B45AD9 /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/imgui/imgui_impl_opengl3.cpp */; };
-		9B4009E21A1148D8B09E9521 /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/src/Texture.cpp */ = {isa = PBXBuildFile; fileRef = 4684AF399F6341D89B4872D8 /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/src/Texture.cpp */; };
-		A51CC6D074714C4DBE89E00D /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/src/Camera.cpp */ = {isa = PBXBuildFile; fileRef = 2F95441D79044D0AB5E5D9AA /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/src/Camera.cpp */; };
-		ADD3003F8A5C415295E68A67 /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/imgui/imgui.cpp */ = {isa = PBXBuildFile; fileRef = 7115EB6D591F490EA1751446 /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/imgui/imgui.cpp */; };
-		B9D882E6783F47A8A8EDE613 /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/src/GLExample.cpp */ = {isa = PBXBuildFile; fileRef = 80294B23AF3540BEAB29E61C /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/src/GLExample.cpp */; };
-		C287667251D14D35AC01439E /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/imgui/imgui_widgets.cpp */ = {isa = PBXBuildFile; fileRef = 29509642D02946D6A47EB5E0 /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/imgui/imgui_widgets.cpp */; };
-		CB73DC2894B64D908891FB6D /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/src/ShaderProgram.cpp */ = {isa = PBXBuildFile; fileRef = 861B8361AF3E4DA7B0CECDAC /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/src/ShaderProgram.cpp */; };
-		D71D10B414694E3D90A65131 /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/imgui/imgui_demo.cpp */ = {isa = PBXBuildFile; fileRef = 3E92B81BCA6844CEBCC5E22D /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/imgui/imgui_demo.cpp */; };
-		DDE8DCDEFDC444AFB0580963 /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/src/Cube.cpp */ = {isa = PBXBuildFile; fileRef = 535EDB33D22C4CD2BA96ABF1 /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/src/Cube.cpp */; };
-		FEDEF512D5124CB3A935711D /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/src/MultiLine.cpp */ = {isa = PBXBuildFile; fileRef = D1E9DBC9419B48BCB865C2FA /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/src/MultiLine.cpp */; };
+		14958247C5FD4061B25980C2 /* imgui_draw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 80C80ED41DEA448F978E9FBD /* imgui_draw.cpp */; };
+		16A1844912E748459246D7F3 /* Shape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E5550E49B93142C1B8E50090 /* Shape.cpp */; };
+		4BF0CC50BAE9463F9B557E15 /* imgui_impl_glfw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F558B235BA4A4961BC2CDE15 /* imgui_impl_glfw.cpp */; };
+		5252C005DFB6449E8DCD71FD /* Torus.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04F6B3FD11BD49A6A9D70C17 /* Torus.cpp */; };
+		68345BC6262245119DE06830 /* imgui_tables.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E13F7034EF36466B99786BBE /* imgui_tables.cpp */; };
+		77D9E917C2F54731B7F4717A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0023EFEE99444D318D43EA5B /* main.cpp */; };
+		7FB812BD50CD48B3A3528100 /* GLApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08C3BCDF95914DADA1A25C32 /* GLApp.cpp */; };
+		932CBB533BBA4326A3E37BBC /* imgui_impl_opengl3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 673D85D909334A3DB0B45AD9 /* imgui_impl_opengl3.cpp */; };
+		9B4009E21A1148D8B09E9521 /* Texture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4684AF399F6341D89B4872D8 /* Texture.cpp */; };
+		A51CC6D074714C4DBE89E00D /* Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F95441D79044D0AB5E5D9AA /* Camera.cpp */; };
+		ADD3003F8A5C415295E68A67 /* imgui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7115EB6D591F490EA1751446 /* imgui.cpp */; };
+		B9D882E6783F47A8A8EDE613 /* GLExample.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 80294B23AF3540BEAB29E61C /* GLExample.cpp */; };
+		C287667251D14D35AC01439E /* imgui_widgets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 29509642D02946D6A47EB5E0 /* imgui_widgets.cpp */; };
+		CB73DC2894B64D908891FB6D /* ShaderProgram.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 861B8361AF3E4DA7B0CECDAC /* ShaderProgram.cpp */; };
+		D71D10B414694E3D90A65131 /* imgui_demo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3E92B81BCA6844CEBCC5E22D /* imgui_demo.cpp */; };
+		DDE8DCDEFDC444AFB0580963 /* Cube.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 535EDB33D22C4CD2BA96ABF1 /* Cube.cpp */; };
+		FEDEF512D5124CB3A935711D /* MultiLine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E9DBC9419B48BCB865C2FA /* MultiLine.cpp */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXBuildStyle section */
-		8492A93B49194E98850A8C25 /* MinSizeRel */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-			};
-			name = MinSizeRel;
-		};
-		965EC089056049FA833FDD81 /* Debug */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-			};
-			name = Debug;
-		};
-		A3B0B2C0189E49098E12A4BA /* Release */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-			};
-			name = Release;
-		};
-		A992A02E16914074BE95DAC3 /* RelWithDebInfo */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-			};
-			name = RelWithDebInfo;
-		};
-/* End PBXBuildStyle section */
 
 /* Begin PBXContainerItemProxy section */
 		4D4E7FF42100437FAD6B60F5 /* PBXContainerItemProxy */ = {
@@ -134,29 +100,29 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0023EFEE99444D318D43EA5B /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/src/main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
-		04F6B3FD11BD49A6A9D70C17 /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/src/Torus.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Torus.cpp; path = src/Torus.cpp; sourceTree = SOURCE_ROOT; };
-		08C3BCDF95914DADA1A25C32 /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/src/GLApp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = GLApp.cpp; path = src/GLApp.cpp; sourceTree = SOURCE_ROOT; };
-		29509642D02946D6A47EB5E0 /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/imgui/imgui_widgets.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = imgui_widgets.cpp; path = imgui/imgui_widgets.cpp; sourceTree = SOURCE_ROOT; };
-		2B9FC84C8D674EEA97111439 /* imgui */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libimgui.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D642FB5631A4158A6530A5B /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		2F95441D79044D0AB5E5D9AA /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/src/Camera.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Camera.cpp; path = src/Camera.cpp; sourceTree = SOURCE_ROOT; };
-		3644788484E84092A4122DF8 /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		381E19956CF24BC691ECE1A8 /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/imgui/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = imgui/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		3E92B81BCA6844CEBCC5E22D /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/imgui/imgui_demo.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = imgui_demo.cpp; path = imgui/imgui_demo.cpp; sourceTree = SOURCE_ROOT; };
-		4684AF399F6341D89B4872D8 /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/src/Texture.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Texture.cpp; path = src/Texture.cpp; sourceTree = SOURCE_ROOT; };
-		535EDB33D22C4CD2BA96ABF1 /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/src/Cube.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Cube.cpp; path = src/Cube.cpp; sourceTree = SOURCE_ROOT; };
-		673D85D909334A3DB0B45AD9 /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/imgui/imgui_impl_opengl3.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = imgui_impl_opengl3.cpp; path = imgui/imgui_impl_opengl3.cpp; sourceTree = SOURCE_ROOT; };
+		0023EFEE99444D318D43EA5B /* main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
+		04F6B3FD11BD49A6A9D70C17 /* Torus.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Torus.cpp; path = src/Torus.cpp; sourceTree = SOURCE_ROOT; };
+		08C3BCDF95914DADA1A25C32 /* GLApp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = GLApp.cpp; path = src/GLApp.cpp; sourceTree = SOURCE_ROOT; };
+		29509642D02946D6A47EB5E0 /* imgui_widgets.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = imgui_widgets.cpp; path = imgui/imgui_widgets.cpp; sourceTree = SOURCE_ROOT; };
+		2B9FC84C8D674EEA97111439 /* libimgui.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libimgui.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D642FB5631A4158A6530A5B /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		2F95441D79044D0AB5E5D9AA /* Camera.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Camera.cpp; path = src/Camera.cpp; sourceTree = SOURCE_ROOT; };
+		3644788484E84092A4122DF8 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		381E19956CF24BC691ECE1A8 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = imgui/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		3E92B81BCA6844CEBCC5E22D /* imgui_demo.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = imgui_demo.cpp; path = imgui/imgui_demo.cpp; sourceTree = SOURCE_ROOT; };
+		4684AF399F6341D89B4872D8 /* Texture.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Texture.cpp; path = src/Texture.cpp; sourceTree = SOURCE_ROOT; };
+		535EDB33D22C4CD2BA96ABF1 /* Cube.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Cube.cpp; path = src/Cube.cpp; sourceTree = SOURCE_ROOT; };
+		673D85D909334A3DB0B45AD9 /* imgui_impl_opengl3.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = imgui_impl_opengl3.cpp; path = imgui/imgui_impl_opengl3.cpp; sourceTree = SOURCE_ROOT; };
 		6D28FC119038457195F40D5F /* exercise_3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = exercise_3; sourceTree = BUILT_PRODUCTS_DIR; };
-		7115EB6D591F490EA1751446 /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/imgui/imgui.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = imgui.cpp; path = imgui/imgui.cpp; sourceTree = SOURCE_ROOT; };
-		80294B23AF3540BEAB29E61C /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/src/GLExample.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = GLExample.cpp; path = src/GLExample.cpp; sourceTree = SOURCE_ROOT; };
-		80C80ED41DEA448F978E9FBD /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/imgui/imgui_draw.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = imgui_draw.cpp; path = imgui/imgui_draw.cpp; sourceTree = SOURCE_ROOT; };
-		861B8361AF3E4DA7B0CECDAC /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/src/ShaderProgram.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ShaderProgram.cpp; path = src/ShaderProgram.cpp; sourceTree = SOURCE_ROOT; };
-		9D6B404F1CE548588D2F7402 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks/OpenGL.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
-		D1E9DBC9419B48BCB865C2FA /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/src/MultiLine.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MultiLine.cpp; path = src/MultiLine.cpp; sourceTree = SOURCE_ROOT; };
-		E13F7034EF36466B99786BBE /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/imgui/imgui_tables.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = imgui_tables.cpp; path = imgui/imgui_tables.cpp; sourceTree = SOURCE_ROOT; };
-		E5550E49B93142C1B8E50090 /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/src/Shape.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Shape.cpp; path = src/Shape.cpp; sourceTree = SOURCE_ROOT; };
-		F558B235BA4A4961BC2CDE15 /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/imgui/imgui_impl_glfw.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = imgui_impl_glfw.cpp; path = imgui/imgui_impl_glfw.cpp; sourceTree = SOURCE_ROOT; };
+		7115EB6D591F490EA1751446 /* imgui.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = imgui.cpp; path = imgui/imgui.cpp; sourceTree = SOURCE_ROOT; };
+		80294B23AF3540BEAB29E61C /* GLExample.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = GLExample.cpp; path = src/GLExample.cpp; sourceTree = SOURCE_ROOT; };
+		80C80ED41DEA448F978E9FBD /* imgui_draw.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = imgui_draw.cpp; path = imgui/imgui_draw.cpp; sourceTree = SOURCE_ROOT; };
+		861B8361AF3E4DA7B0CECDAC /* ShaderProgram.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ShaderProgram.cpp; path = src/ShaderProgram.cpp; sourceTree = SOURCE_ROOT; };
+		9D6B404F1CE548588D2F7402 /* OpenGL.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+		D1E9DBC9419B48BCB865C2FA /* MultiLine.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MultiLine.cpp; path = src/MultiLine.cpp; sourceTree = SOURCE_ROOT; };
+		E13F7034EF36466B99786BBE /* imgui_tables.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = imgui_tables.cpp; path = imgui/imgui_tables.cpp; sourceTree = SOURCE_ROOT; };
+		E5550E49B93142C1B8E50090 /* Shape.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Shape.cpp; path = src/Shape.cpp; sourceTree = SOURCE_ROOT; };
+		F558B235BA4A4961BC2CDE15 /* imgui_impl_glfw.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = imgui_impl_glfw.cpp; path = imgui/imgui_impl_glfw.cpp; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,16 +146,16 @@
 		1D30B41A4C764C739A034C5A /* Source Files */ = {
 			isa = PBXGroup;
 			children = (
-				2F95441D79044D0AB5E5D9AA /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/src/Camera.cpp */,
-				535EDB33D22C4CD2BA96ABF1 /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/src/Cube.cpp */,
-				08C3BCDF95914DADA1A25C32 /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/src/GLApp.cpp */,
-				80294B23AF3540BEAB29E61C /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/src/GLExample.cpp */,
-				D1E9DBC9419B48BCB865C2FA /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/src/MultiLine.cpp */,
-				861B8361AF3E4DA7B0CECDAC /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/src/ShaderProgram.cpp */,
-				E5550E49B93142C1B8E50090 /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/src/Shape.cpp */,
-				4684AF399F6341D89B4872D8 /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/src/Texture.cpp */,
-				04F6B3FD11BD49A6A9D70C17 /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/src/Torus.cpp */,
-				0023EFEE99444D318D43EA5B /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/src/main.cpp */,
+				2F95441D79044D0AB5E5D9AA /* Camera.cpp */,
+				535EDB33D22C4CD2BA96ABF1 /* Cube.cpp */,
+				08C3BCDF95914DADA1A25C32 /* GLApp.cpp */,
+				80294B23AF3540BEAB29E61C /* GLExample.cpp */,
+				D1E9DBC9419B48BCB865C2FA /* MultiLine.cpp */,
+				861B8361AF3E4DA7B0CECDAC /* ShaderProgram.cpp */,
+				E5550E49B93142C1B8E50090 /* Shape.cpp */,
+				4684AF399F6341D89B4872D8 /* Texture.cpp */,
+				04F6B3FD11BD49A6A9D70C17 /* Torus.cpp */,
+				0023EFEE99444D318D43EA5B /* main.cpp */,
 			);
 			name = "Source Files";
 			sourceTree = "<group>";
@@ -205,7 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				BC10271B1A1346FFA45D0CB9 /* Source Files */,
-				381E19956CF24BC691ECE1A8 /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/imgui/CMakeLists.txt */,
+				381E19956CF24BC691ECE1A8 /* CMakeLists.txt */,
 			);
 			name = imgui;
 			sourceTree = "<group>";
@@ -214,7 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				1D30B41A4C764C739A034C5A /* Source Files */,
-				2D642FB5631A4158A6530A5B /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/CMakeLists.txt */,
+				2D642FB5631A4158A6530A5B /* CMakeLists.txt */,
 			);
 			name = exercise_3;
 			sourceTree = "<group>";
@@ -223,7 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				2B3CBCCA41844DAEBA959C9A /* CMake Rules */,
-				3644788484E84092A4122DF8 /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/CMakeLists.txt */,
+				3644788484E84092A4122DF8 /* CMakeLists.txt */,
 			);
 			name = ALL_BUILD;
 			sourceTree = "<group>";
@@ -231,7 +197,7 @@
 		468F525C12B4475DA4285FB6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9D6B404F1CE548588D2F7402 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks/OpenGL.framework */,
+				9D6B404F1CE548588D2F7402 /* OpenGL.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -240,7 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				6D28FC119038457195F40D5F /* exercise_3 */,
-				2B9FC84C8D674EEA97111439 /* imgui */,
+				2B9FC84C8D674EEA97111439 /* libimgui.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -248,13 +214,13 @@
 		BC10271B1A1346FFA45D0CB9 /* Source Files */ = {
 			isa = PBXGroup;
 			children = (
-				7115EB6D591F490EA1751446 /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/imgui/imgui.cpp */,
-				3E92B81BCA6844CEBCC5E22D /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/imgui/imgui_demo.cpp */,
-				80C80ED41DEA448F978E9FBD /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/imgui/imgui_draw.cpp */,
-				F558B235BA4A4961BC2CDE15 /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/imgui/imgui_impl_glfw.cpp */,
-				673D85D909334A3DB0B45AD9 /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/imgui/imgui_impl_opengl3.cpp */,
-				E13F7034EF36466B99786BBE /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/imgui/imgui_tables.cpp */,
-				29509642D02946D6A47EB5E0 /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/imgui/imgui_widgets.cpp */,
+				7115EB6D591F490EA1751446 /* imgui.cpp */,
+				3E92B81BCA6844CEBCC5E22D /* imgui_demo.cpp */,
+				80C80ED41DEA448F978E9FBD /* imgui_draw.cpp */,
+				F558B235BA4A4961BC2CDE15 /* imgui_impl_glfw.cpp */,
+				673D85D909334A3DB0B45AD9 /* imgui_impl_opengl3.cpp */,
+				E13F7034EF36466B99786BBE /* imgui_tables.cpp */,
+				29509642D02946D6A47EB5E0 /* imgui_widgets.cpp */,
 			);
 			name = "Source Files";
 			sourceTree = "<group>";
@@ -287,7 +253,7 @@
 			);
 			name = imgui;
 			productName = imgui;
-			productReference = 2B9FC84C8D674EEA97111439 /* imgui */;
+			productReference = 2B9FC84C8D674EEA97111439 /* libimgui.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		6A893832E3074E48884331D9 /* exercise_3 */ = {
@@ -314,20 +280,16 @@
 		776925E0EDB84898A7E6A780 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1420;
 			};
 			buildConfigurationList = E58FD69646F44FBE9F851D06 /* Build configuration list for PBXProject "exercise_3" */;
-			buildSettings = {
-			};
-			buildStyles = (
-				965EC089056049FA833FDD81 /* Debug */,
-				A3B0B2C0189E49098E12A4BA /* Release */,
-				8492A93B49194E98850A8C25 /* MinSizeRel */,
-				A992A02E16914074BE95DAC3 /* RelWithDebInfo */,
-			);
 			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
 			mainGroup = C1205268A4EB408DB01F4EAC;
 			projectDirPath = "/Users/dianadragos/Desktop/Computer Graphics/Exercise3";
 			projectRoot = "";
@@ -341,21 +303,6 @@
 /* End PBXProject section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3C0110FC8322DE7E50886E21 = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# shell script goes here
-exit 0";
-			showEnvVarsInLog = 0;
-		};
 		8584AB21E97B2D9F1E7AB905 /* Generate CMakeFiles/ALL_BUILD */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
@@ -366,42 +313,11 @@ exit 0";
 			);
 			name = "Generate CMakeFiles/ALL_BUILD";
 			outputPaths = (
-"/Users/dianadragos/Desktop/Computer Graphics/Exercise3/build/CMakeFiles/ALL_BUILD"			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "set -e
-if test \"$CONFIGURATION\" = \"Debug\"; then :
-  cd \"/Users/dianadragos/Desktop/Computer Graphics/Exercise3/build\"
-  echo Build\\ all\\ projects
-fi
-if test \"$CONFIGURATION\" = \"Release\"; then :
-  cd \"/Users/dianadragos/Desktop/Computer Graphics/Exercise3/build\"
-  echo Build\\ all\\ projects
-fi
-if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
-  cd \"/Users/dianadragos/Desktop/Computer Graphics/Exercise3/build\"
-  echo Build\\ all\\ projects
-fi
-if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
-  cd \"/Users/dianadragos/Desktop/Computer Graphics/Exercise3/build\"
-  echo Build\\ all\\ projects
-fi
-";
-			showEnvVarsInLog = 0;
-		};
-		9B50530E35CC49C82C2FACCF = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
+				"/Users/dianadragos/Desktop/Computer Graphics/Exercise3/build/CMakeFiles/ALL_BUILD",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# shell script goes here
-exit 0";
+			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd \"/Users/dianadragos/Desktop/Computer Graphics/Exercise3/build\"\n  echo Build\\ all\\ projects\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd \"/Users/dianadragos/Desktop/Computer Graphics/Exercise3/build\"\n  echo Build\\ all\\ projects\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd \"/Users/dianadragos/Desktop/Computer Graphics/Exercise3/build\"\n  echo Build\\ all\\ projects\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd \"/Users/dianadragos/Desktop/Computer Graphics/Exercise3/build\"\n  echo Build\\ all\\ projects\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		A2BF11F83FE08BE7F836D38D /* Generate CMakeFiles/ZERO_CHECK */ = {
@@ -414,27 +330,11 @@ exit 0";
 			);
 			name = "Generate CMakeFiles/ZERO_CHECK";
 			outputPaths = (
-"/Users/dianadragos/Desktop/Computer Graphics/Exercise3/build/CMakeFiles/ZERO_CHECK"			);
+				"/Users/dianadragos/Desktop/Computer Graphics/Exercise3/build/CMakeFiles/ZERO_CHECK",
+			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "set -e
-if test \"$CONFIGURATION\" = \"Debug\"; then :
-  cd \"/Users/dianadragos/Desktop/Computer Graphics/Exercise3/build\"
-  make -f /Users/dianadragos/Desktop/Computer\\ Graphics/Exercise3/build/CMakeScripts/ReRunCMake.make
-fi
-if test \"$CONFIGURATION\" = \"Release\"; then :
-  cd \"/Users/dianadragos/Desktop/Computer Graphics/Exercise3/build\"
-  make -f /Users/dianadragos/Desktop/Computer\\ Graphics/Exercise3/build/CMakeScripts/ReRunCMake.make
-fi
-if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
-  cd \"/Users/dianadragos/Desktop/Computer Graphics/Exercise3/build\"
-  make -f /Users/dianadragos/Desktop/Computer\\ Graphics/Exercise3/build/CMakeScripts/ReRunCMake.make
-fi
-if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
-  cd \"/Users/dianadragos/Desktop/Computer Graphics/Exercise3/build\"
-  make -f /Users/dianadragos/Desktop/Computer\\ Graphics/Exercise3/build/CMakeScripts/ReRunCMake.make
-fi
-";
+			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd \"/Users/dianadragos/Desktop/Computer Graphics/Exercise3/build\"\n  make -f /Users/dianadragos/Desktop/Computer\\ Graphics/Exercise3/build/CMakeScripts/ReRunCMake.make\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd \"/Users/dianadragos/Desktop/Computer Graphics/Exercise3/build\"\n  make -f /Users/dianadragos/Desktop/Computer\\ Graphics/Exercise3/build/CMakeScripts/ReRunCMake.make\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd \"/Users/dianadragos/Desktop/Computer Graphics/Exercise3/build\"\n  make -f /Users/dianadragos/Desktop/Computer\\ Graphics/Exercise3/build/CMakeScripts/ReRunCMake.make\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd \"/Users/dianadragos/Desktop/Computer Graphics/Exercise3/build\"\n  make -f /Users/dianadragos/Desktop/Computer\\ Graphics/Exercise3/build/CMakeScripts/ReRunCMake.make\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -444,16 +344,16 @@ fi
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A51CC6D074714C4DBE89E00D /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/src/Camera.cpp */,
-				DDE8DCDEFDC444AFB0580963 /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/src/Cube.cpp */,
-				7FB812BD50CD48B3A3528100 /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/src/GLApp.cpp */,
-				B9D882E6783F47A8A8EDE613 /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/src/GLExample.cpp */,
-				FEDEF512D5124CB3A935711D /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/src/MultiLine.cpp */,
-				CB73DC2894B64D908891FB6D /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/src/ShaderProgram.cpp */,
-				16A1844912E748459246D7F3 /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/src/Shape.cpp */,
-				9B4009E21A1148D8B09E9521 /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/src/Texture.cpp */,
-				5252C005DFB6449E8DCD71FD /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/src/Torus.cpp */,
-				77D9E917C2F54731B7F4717A /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/src/main.cpp */,
+				A51CC6D074714C4DBE89E00D /* Camera.cpp in Sources */,
+				DDE8DCDEFDC444AFB0580963 /* Cube.cpp in Sources */,
+				7FB812BD50CD48B3A3528100 /* GLApp.cpp in Sources */,
+				B9D882E6783F47A8A8EDE613 /* GLExample.cpp in Sources */,
+				FEDEF512D5124CB3A935711D /* MultiLine.cpp in Sources */,
+				CB73DC2894B64D908891FB6D /* ShaderProgram.cpp in Sources */,
+				16A1844912E748459246D7F3 /* Shape.cpp in Sources */,
+				9B4009E21A1148D8B09E9521 /* Texture.cpp in Sources */,
+				5252C005DFB6449E8DCD71FD /* Torus.cpp in Sources */,
+				77D9E917C2F54731B7F4717A /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,13 +361,13 @@ fi
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADD3003F8A5C415295E68A67 /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/imgui/imgui.cpp */,
-				D71D10B414694E3D90A65131 /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/imgui/imgui_demo.cpp */,
-				14958247C5FD4061B25980C2 /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/imgui/imgui_draw.cpp */,
-				4BF0CC50BAE9463F9B557E15 /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/imgui/imgui_impl_glfw.cpp */,
-				932CBB533BBA4326A3E37BBC /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/imgui/imgui_impl_opengl3.cpp */,
-				68345BC6262245119DE06830 /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/imgui/imgui_tables.cpp */,
-				C287667251D14D35AC01439E /* /Users/dianadragos/Desktop/Computer Graphics/Exercise3/imgui/imgui_widgets.cpp */,
+				ADD3003F8A5C415295E68A67 /* imgui.cpp in Sources */,
+				D71D10B414694E3D90A65131 /* imgui_demo.cpp in Sources */,
+				14958247C5FD4061B25980C2 /* imgui_draw.cpp in Sources */,
+				4BF0CC50BAE9463F9B557E15 /* imgui_impl_glfw.cpp in Sources */,
+				932CBB533BBA4326A3E37BBC /* imgui_impl_opengl3.cpp in Sources */,
+				68345BC6262245119DE06830 /* imgui_tables.cpp in Sources */,
+				C287667251D14D35AC01439E /* imgui_widgets.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -519,21 +419,36 @@ fi
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 2;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'SHADER_DIR=\"/Users/dianadragos/Desktop/Computer Graphics/Exercise3/shader\"'","'RES_DIR=\"/Users/dianadragos/Desktop/Computer Graphics/Exercise3/res\"'",GLEW_STATIC,"$(inherited)");
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"'SHADER_DIR=\"/Users/dianadragos/Desktop/Computer Graphics/Exercise3/shader\"'",
+					"'RES_DIR=\"/Users/dianadragos/Desktop/Computer Graphics/Exercise3/res\"'",
+					GLEW_STATIC,
+					"$(inherited)",
+				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("\"/Users/dianadragos/Desktop/Computer Graphics/Exercise3/imgui/imgui\"","$(inherited)");
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/dianadragos/Desktop/Computer Graphics/Exercise3/imgui/imgui\"",
+					"$(inherited)",
+				);
 				INSTALL_PATH = "";
 				LIBRARY_STYLE = STATIC;
 				ONLY_ACTIVE_ARCH = NO;
-				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG '-std=gnu++17' ";
-				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu++17'",
+				);
+				OTHER_LIBTOOLFLAGS = "";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = imgui;
 				SECTORDER_FLAGS = "";
-				SYSTEM_HEADER_SEARCH_PATHS = ("\"/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/include\"","$(inherited)");
+				SYSTEM_HEADER_SEARCH_PATHS = (
+					"\"/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/include\"",
+					"$(inherited)",
+				);
 				TARGET_TEMP_DIR = "/Users/dianadragos/Desktop/Computer Graphics/Exercise3/build/build/imgui.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
+				WARNING_CFLAGS = "$(inherited)";
 			};
 			name = RelWithDebInfo;
 		};
@@ -546,16 +461,19 @@ fi
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INSTALL_PATH = "";
 				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_LDFLAGS = " $(inherited)";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = ZERO_CHECK;
 				SECTORDER_FLAGS = "";
 				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
+				WARNING_CFLAGS = "$(inherited)";
 			};
 			name = Debug;
 		};
@@ -571,21 +489,36 @@ fi
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = s;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'SHADER_DIR=\"/Users/dianadragos/Desktop/Computer Graphics/Exercise3/shader\"'","'RES_DIR=\"/Users/dianadragos/Desktop/Computer Graphics/Exercise3/res\"'",GLEW_STATIC,"$(inherited)");
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"'SHADER_DIR=\"/Users/dianadragos/Desktop/Computer Graphics/Exercise3/shader\"'",
+					"'RES_DIR=\"/Users/dianadragos/Desktop/Computer Graphics/Exercise3/res\"'",
+					GLEW_STATIC,
+					"$(inherited)",
+				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("\"/Users/dianadragos/Desktop/Computer Graphics/Exercise3/imgui/imgui\"","$(inherited)");
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/dianadragos/Desktop/Computer Graphics/Exercise3/imgui/imgui\"",
+					"$(inherited)",
+				);
 				INSTALL_PATH = "";
 				LIBRARY_STYLE = STATIC;
 				ONLY_ACTIVE_ARCH = NO;
-				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++17' ";
-				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu++17'",
+				);
+				OTHER_LIBTOOLFLAGS = "";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = imgui;
 				SECTORDER_FLAGS = "";
-				SYSTEM_HEADER_SEARCH_PATHS = ("\"/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/include\"","$(inherited)");
+				SYSTEM_HEADER_SEARCH_PATHS = (
+					"\"/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/include\"",
+					"$(inherited)",
+				);
 				TARGET_TEMP_DIR = "/Users/dianadragos/Desktop/Computer Graphics/Exercise3/build/build/imgui.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
+				WARNING_CFLAGS = "$(inherited)";
 			};
 			name = MinSizeRel;
 		};
@@ -609,16 +542,32 @@ fi
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/opt/homebrew/Cellar/libpng/1.6.39/include/libpng16/**",
+					"/opt/homebrew/Cellar/jpeg/9e/include/**",
+				);
 				INSTALL_PATH = "";
+				NEW_SETTING = "";
+				NEW_SETTING1 = "";
 				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_LDFLAGS = (
+					"-L/opt/homebrew/Cellar/libpng/1.6.39/lib",
+					"-lpng16",
+					"-lz",
+					"-L/opt/homebrew/Cellar/jpeg/9e/lib",
+					"-ljpeg\n\n",
+					"$(inherited)",
+				);
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = ALL_BUILD;
 				SECTORDER_FLAGS = "";
 				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
+				WARNING_CFLAGS = "$(inherited)";
 			};
 			name = Release;
 		};
@@ -634,21 +583,59 @@ fi
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = s;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'SHADER_DIR=\"/Users/dianadragos/Desktop/Computer Graphics/Exercise3/shader\"'","'RES_DIR=\"/Users/dianadragos/Desktop/Computer Graphics/Exercise3/res\"'",GLEW_STATIC,"$(inherited)");
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"'SHADER_DIR=\"/Users/dianadragos/Desktop/Computer Graphics/Exercise3/shader\"'",
+					"'RES_DIR=\"/Users/dianadragos/Desktop/Computer Graphics/Exercise3/res\"'",
+					GLEW_STATIC,
+					"$(inherited)",
+				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("\"/Users/dianadragos/Desktop/Computer Graphics/Exercise3\"","$(inherited)");
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/dianadragos/Desktop/Computer Graphics/Exercise3\"",
+					"$(inherited)",
+				);
 				INSTALL_PATH = "";
 				ONLY_ACTIVE_ARCH = NO;
-				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++17' ";
-				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks/OpenGL.framework/OpenGL.tbd,"\"/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/lib/libGLEW.a\"","\"/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/lib/libglfw3.a\"","\"/Users/dianadragos/Desktop/Computer Graphics/Exercise3/build/imgui/MinSizeRel/libimgui.a\"","\"/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/lib/libGLEW.a\"","-Xlinker -framework -Xlinker OpenGL","\"/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/lib/libglfw3.a\"","-framework Cocoa","-framework IOKit","-framework CoreFoundation","$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu++17'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks/OpenGL.framework/OpenGL.tbd,
+					"\"/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/lib/libGLEW.a\"",
+					"\"/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/lib/libglfw3.a\"",
+					"\"/Users/dianadragos/Desktop/Computer Graphics/Exercise3/build/imgui/MinSizeRel/libimgui.a\"",
+					"\"/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/lib/libGLEW.a\"",
+					"-Xlinker",
+					"-framework",
+					"-Xlinker",
+					OpenGL,
+					"\"/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/lib/libglfw3.a\"",
+					"-framework",
+					Cocoa,
+					"-framework",
+					IOKit,
+					"-framework",
+					CoreFoundation,
+					"$(inherited)",
+				);
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = exercise_3;
 				SECTORDER_FLAGS = "";
-				SYSTEM_FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks,"$(inherited)");
-				SYSTEM_HEADER_SEARCH_PATHS = ("\"/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/include\"","$(inherited)");
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = (
+					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks,
+					"$(inherited)",
+				);
+				SYSTEM_HEADER_SEARCH_PATHS = (
+					"\"/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/include\"",
+					"$(inherited)",
+				);
 				TARGET_TEMP_DIR = "/Users/dianadragos/Desktop/Computer Graphics/Exercise3/build/build/exercise_3.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
+				WARNING_CFLAGS = "$(inherited)";
 			};
 			name = MinSizeRel;
 		};
@@ -672,16 +659,19 @@ fi
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INSTALL_PATH = "";
 				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_LDFLAGS = " $(inherited)";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = ZERO_CHECK;
 				SECTORDER_FLAGS = "";
 				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
+				WARNING_CFLAGS = "$(inherited)";
 			};
 			name = MinSizeRel;
 		};
@@ -708,21 +698,36 @@ fi
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 3;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'SHADER_DIR=\"/Users/dianadragos/Desktop/Computer Graphics/Exercise3/shader\"'","'RES_DIR=\"/Users/dianadragos/Desktop/Computer Graphics/Exercise3/res\"'",GLEW_STATIC,"$(inherited)");
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"'SHADER_DIR=\"/Users/dianadragos/Desktop/Computer Graphics/Exercise3/shader\"'",
+					"'RES_DIR=\"/Users/dianadragos/Desktop/Computer Graphics/Exercise3/res\"'",
+					GLEW_STATIC,
+					"$(inherited)",
+				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("\"/Users/dianadragos/Desktop/Computer Graphics/Exercise3/imgui/imgui\"","$(inherited)");
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/dianadragos/Desktop/Computer Graphics/Exercise3/imgui/imgui\"",
+					"$(inherited)",
+				);
 				INSTALL_PATH = "";
 				LIBRARY_STYLE = STATIC;
 				ONLY_ACTIVE_ARCH = NO;
-				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++17' ";
-				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu++17'",
+				);
+				OTHER_LIBTOOLFLAGS = "";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = imgui;
 				SECTORDER_FLAGS = "";
-				SYSTEM_HEADER_SEARCH_PATHS = ("\"/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/include\"","$(inherited)");
+				SYSTEM_HEADER_SEARCH_PATHS = (
+					"\"/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/include\"",
+					"$(inherited)",
+				);
 				TARGET_TEMP_DIR = "/Users/dianadragos/Desktop/Computer Graphics/Exercise3/build/build/imgui.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
+				WARNING_CFLAGS = "$(inherited)";
 			};
 			name = Release;
 		};
@@ -738,21 +743,59 @@ fi
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 3;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'SHADER_DIR=\"/Users/dianadragos/Desktop/Computer Graphics/Exercise3/shader\"'","'RES_DIR=\"/Users/dianadragos/Desktop/Computer Graphics/Exercise3/res\"'",GLEW_STATIC,"$(inherited)");
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"'SHADER_DIR=\"/Users/dianadragos/Desktop/Computer Graphics/Exercise3/shader\"'",
+					"'RES_DIR=\"/Users/dianadragos/Desktop/Computer Graphics/Exercise3/res\"'",
+					GLEW_STATIC,
+					"$(inherited)",
+				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("\"/Users/dianadragos/Desktop/Computer Graphics/Exercise3\"","$(inherited)");
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/dianadragos/Desktop/Computer Graphics/Exercise3\"",
+					"$(inherited)",
+				);
 				INSTALL_PATH = "";
 				ONLY_ACTIVE_ARCH = NO;
-				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++17' ";
-				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks/OpenGL.framework/OpenGL.tbd,"\"/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/lib/libGLEW.a\"","\"/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/lib/libglfw3.a\"","\"/Users/dianadragos/Desktop/Computer Graphics/Exercise3/build/imgui/Release/libimgui.a\"","\"/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/lib/libGLEW.a\"","-Xlinker -framework -Xlinker OpenGL","\"/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/lib/libglfw3.a\"","-framework Cocoa","-framework IOKit","-framework CoreFoundation","$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu++17'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks/OpenGL.framework/OpenGL.tbd,
+					"\"/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/lib/libGLEW.a\"",
+					"\"/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/lib/libglfw3.a\"",
+					"\"/Users/dianadragos/Desktop/Computer Graphics/Exercise3/build/imgui/Release/libimgui.a\"",
+					"\"/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/lib/libGLEW.a\"",
+					"-Xlinker",
+					"-framework",
+					"-Xlinker",
+					OpenGL,
+					"\"/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/lib/libglfw3.a\"",
+					"-framework",
+					Cocoa,
+					"-framework",
+					IOKit,
+					"-framework",
+					CoreFoundation,
+					"$(inherited)",
+				);
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = exercise_3;
 				SECTORDER_FLAGS = "";
-				SYSTEM_FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks,"$(inherited)");
-				SYSTEM_HEADER_SEARCH_PATHS = ("\"/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/include\"","$(inherited)");
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = (
+					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks,
+					"$(inherited)",
+				);
+				SYSTEM_HEADER_SEARCH_PATHS = (
+					"\"/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/include\"",
+					"$(inherited)",
+				);
 				TARGET_TEMP_DIR = "/Users/dianadragos/Desktop/Computer Graphics/Exercise3/build/build/exercise_3.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
+				WARNING_CFLAGS = "$(inherited)";
 			};
 			name = Release;
 		};
@@ -768,21 +811,33 @@ fi
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'SHADER_DIR=\"/Users/dianadragos/Desktop/Computer Graphics/Exercise3/shader\"'","'RES_DIR=\"/Users/dianadragos/Desktop/Computer Graphics/Exercise3/res\"'",GLEW_STATIC,"$(inherited)");
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"'SHADER_DIR=\"/Users/dianadragos/Desktop/Computer Graphics/Exercise3/shader\"'",
+					"'RES_DIR=\"/Users/dianadragos/Desktop/Computer Graphics/Exercise3/res\"'",
+					GLEW_STATIC,
+					"$(inherited)",
+				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("\"/Users/dianadragos/Desktop/Computer Graphics/Exercise3/imgui/imgui\"","$(inherited)");
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/dianadragos/Desktop/Computer Graphics/Exercise3/imgui/imgui\"",
+					"$(inherited)",
+				);
 				INSTALL_PATH = "";
 				LIBRARY_STYLE = STATIC;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CPLUSPLUSFLAGS = "   '-std=gnu++17' ";
-				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_LIBTOOLFLAGS = "";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = imgui;
 				SECTORDER_FLAGS = "";
-				SYSTEM_HEADER_SEARCH_PATHS = ("\"/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/include\"","$(inherited)");
+				SYSTEM_HEADER_SEARCH_PATHS = (
+					"\"/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/include\"",
+					"$(inherited)",
+				);
 				TARGET_TEMP_DIR = "/Users/dianadragos/Desktop/Computer Graphics/Exercise3/build/build/imgui.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
+				WARNING_CFLAGS = "$(inherited)";
 			};
 			name = Debug;
 		};
@@ -795,16 +850,19 @@ fi
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INSTALL_PATH = "";
 				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_LDFLAGS = " $(inherited)";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = ZERO_CHECK;
 				SECTORDER_FLAGS = "";
 				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
+				WARNING_CFLAGS = "$(inherited)";
 			};
 			name = Release;
 		};
@@ -827,16 +885,32 @@ fi
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/opt/homebrew/Cellar/libpng/1.6.39/include/libpng16/**",
+					"/opt/homebrew/Cellar/jpeg/9e/include/**",
+				);
 				INSTALL_PATH = "";
+				NEW_SETTING = "";
+				NEW_SETTING1 = "";
 				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_LDFLAGS = (
+					"-L/opt/homebrew/Cellar/libpng/1.6.39/lib",
+					"-lpng16",
+					"-lz",
+					"-L/opt/homebrew/Cellar/jpeg/9e/lib",
+					"-ljpeg\n\n",
+					"$(inherited)",
+				);
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = ALL_BUILD;
 				SECTORDER_FLAGS = "";
 				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
+				WARNING_CFLAGS = "$(inherited)";
 			};
 			name = Debug;
 		};
@@ -849,16 +923,19 @@ fi
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INSTALL_PATH = "";
 				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_LDFLAGS = " $(inherited)";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = ZERO_CHECK;
 				SECTORDER_FLAGS = "";
 				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
+				WARNING_CFLAGS = "$(inherited)";
 			};
 			name = RelWithDebInfo;
 		};
@@ -874,21 +951,56 @@ fi
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'SHADER_DIR=\"/Users/dianadragos/Desktop/Computer Graphics/Exercise3/shader\"'","'RES_DIR=\"/Users/dianadragos/Desktop/Computer Graphics/Exercise3/res\"'",GLEW_STATIC,"$(inherited)");
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"'SHADER_DIR=\"/Users/dianadragos/Desktop/Computer Graphics/Exercise3/shader\"'",
+					"'RES_DIR=\"/Users/dianadragos/Desktop/Computer Graphics/Exercise3/res\"'",
+					GLEW_STATIC,
+					"$(inherited)",
+				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("\"/Users/dianadragos/Desktop/Computer Graphics/Exercise3\"","$(inherited)");
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/dianadragos/Desktop/Computer Graphics/Exercise3\"",
+					"$(inherited)",
+				);
 				INSTALL_PATH = "";
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CPLUSPLUSFLAGS = "   '-std=gnu++17' ";
-				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks/OpenGL.framework/OpenGL.tbd,"\"/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/debug/lib/libGLEWd.a\"","\"/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/debug/lib/libglfw3.a\"","\"/Users/dianadragos/Desktop/Computer Graphics/Exercise3/build/imgui/Debug/libimgui.a\"","\"/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/debug/lib/libGLEWd.a\"","-Xlinker -framework -Xlinker OpenGL","\"/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/debug/lib/libglfw3.a\"","-framework Cocoa","-framework IOKit","-framework CoreFoundation","$(inherited)");
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks/OpenGL.framework/OpenGL.tbd,
+					"\"/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/debug/lib/libGLEWd.a\"",
+					"\"/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/debug/lib/libglfw3.a\"",
+					"\"/Users/dianadragos/Desktop/Computer Graphics/Exercise3/build/imgui/Debug/libimgui.a\"",
+					"\"/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/debug/lib/libGLEWd.a\"",
+					"-Xlinker",
+					"-framework",
+					"-Xlinker",
+					OpenGL,
+					"\"/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/debug/lib/libglfw3.a\"",
+					"-framework",
+					Cocoa,
+					"-framework",
+					IOKit,
+					"-framework",
+					CoreFoundation,
+					"$(inherited)",
+				);
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = exercise_3;
 				SECTORDER_FLAGS = "";
-				SYSTEM_FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks,"$(inherited)");
-				SYSTEM_HEADER_SEARCH_PATHS = ("\"/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/include\"","$(inherited)");
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = (
+					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks,
+					"$(inherited)",
+				);
+				SYSTEM_HEADER_SEARCH_PATHS = (
+					"\"/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/include\"",
+					"$(inherited)",
+				);
 				TARGET_TEMP_DIR = "/Users/dianadragos/Desktop/Computer Graphics/Exercise3/build/build/exercise_3.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
+				WARNING_CFLAGS = "$(inherited)";
 			};
 			name = Debug;
 		};
@@ -904,21 +1016,59 @@ fi
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 2;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'SHADER_DIR=\"/Users/dianadragos/Desktop/Computer Graphics/Exercise3/shader\"'","'RES_DIR=\"/Users/dianadragos/Desktop/Computer Graphics/Exercise3/res\"'",GLEW_STATIC,"$(inherited)");
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"'SHADER_DIR=\"/Users/dianadragos/Desktop/Computer Graphics/Exercise3/shader\"'",
+					"'RES_DIR=\"/Users/dianadragos/Desktop/Computer Graphics/Exercise3/res\"'",
+					GLEW_STATIC,
+					"$(inherited)",
+				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("\"/Users/dianadragos/Desktop/Computer Graphics/Exercise3\"","$(inherited)");
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/dianadragos/Desktop/Computer Graphics/Exercise3\"",
+					"$(inherited)",
+				);
 				INSTALL_PATH = "";
 				ONLY_ACTIVE_ARCH = NO;
-				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG '-std=gnu++17' ";
-				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks/OpenGL.framework/OpenGL.tbd,"\"/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/lib/libGLEW.a\"","\"/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/lib/libglfw3.a\"","\"/Users/dianadragos/Desktop/Computer Graphics/Exercise3/build/imgui/RelWithDebInfo/libimgui.a\"","\"/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/lib/libGLEW.a\"","-Xlinker -framework -Xlinker OpenGL","\"/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/lib/libglfw3.a\"","-framework Cocoa","-framework IOKit","-framework CoreFoundation","$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu++17'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks/OpenGL.framework/OpenGL.tbd,
+					"\"/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/lib/libGLEW.a\"",
+					"\"/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/lib/libglfw3.a\"",
+					"\"/Users/dianadragos/Desktop/Computer Graphics/Exercise3/build/imgui/RelWithDebInfo/libimgui.a\"",
+					"\"/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/lib/libGLEW.a\"",
+					"-Xlinker",
+					"-framework",
+					"-Xlinker",
+					OpenGL,
+					"\"/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/lib/libglfw3.a\"",
+					"-framework",
+					Cocoa,
+					"-framework",
+					IOKit,
+					"-framework",
+					CoreFoundation,
+					"$(inherited)",
+				);
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = exercise_3;
 				SECTORDER_FLAGS = "";
-				SYSTEM_FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks,"$(inherited)");
-				SYSTEM_HEADER_SEARCH_PATHS = ("\"/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/include\"","$(inherited)");
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = (
+					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks,
+					"$(inherited)",
+				);
+				SYSTEM_HEADER_SEARCH_PATHS = (
+					"\"/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/include\"",
+					"$(inherited)",
+				);
 				TARGET_TEMP_DIR = "/Users/dianadragos/Desktop/Computer Graphics/Exercise3/build/build/exercise_3.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
+				WARNING_CFLAGS = "$(inherited)";
 			};
 			name = RelWithDebInfo;
 		};
@@ -931,16 +1081,32 @@ fi
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/opt/homebrew/Cellar/libpng/1.6.39/include/libpng16/**",
+					"/opt/homebrew/Cellar/jpeg/9e/include/**",
+				);
 				INSTALL_PATH = "";
+				NEW_SETTING = "";
+				NEW_SETTING1 = "";
 				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_LDFLAGS = (
+					"-L/opt/homebrew/Cellar/libpng/1.6.39/lib",
+					"-lpng16",
+					"-lz",
+					"-L/opt/homebrew/Cellar/jpeg/9e/lib",
+					"-ljpeg\n\n",
+					"$(inherited)",
+				);
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = ALL_BUILD;
 				SECTORDER_FLAGS = "";
 				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
+				WARNING_CFLAGS = "$(inherited)";
 			};
 			name = RelWithDebInfo;
 		};
@@ -953,16 +1119,32 @@ fi
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/opt/homebrew/Cellar/libpng/1.6.39/include/libpng16/**",
+					"/opt/homebrew/Cellar/jpeg/9e/include/**",
+				);
 				INSTALL_PATH = "";
+				NEW_SETTING = "";
+				NEW_SETTING1 = "";
 				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_LDFLAGS = (
+					"-L/opt/homebrew/Cellar/libpng/1.6.39/lib",
+					"-lpng16",
+					"-lz",
+					"-L/opt/homebrew/Cellar/jpeg/9e/lib",
+					"-ljpeg\n\n",
+					"$(inherited)",
+				);
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = ALL_BUILD;
 				SECTORDER_FLAGS = "";
 				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
+				WARNING_CFLAGS = "$(inherited)";
 			};
 			name = MinSizeRel;
 		};
