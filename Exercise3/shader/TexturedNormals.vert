@@ -24,7 +24,7 @@ void main()
 		gl_Position = mvpMatrix * vec4(vPosition, 1);
 
 		/* TODO Task 2 Calcualte the gl_position of the enpoint fo the normal */
-
+        
 		/* TODO END */
 	}
 

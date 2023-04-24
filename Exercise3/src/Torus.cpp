@@ -145,10 +145,40 @@ namespace cgCourse
         //       but you can do that how you want. Remember that you can do the repetition of
         //       the same texture either by setting the texture coordinates between 0.0 and 1.0
         //       or by using one of the texture functions, e.g. with GL_REPEAT
-        for(int i = 0; i < positions.size(); i++) {
-            texCoords.push_back(glm::vec2(0.0,0.0));
+        
+        float uStep = 1.0f / (float)(circleXZ.getSegments());
+        float vStep = 4.0f / (float)(circleXY.getVertices().size());
+
+        for(int i = 0; i <= circleXZ.getSegments(); i++) {
+            for(int j = 0; j <= circleXY.getVertices().size(); j++) {
+                float u = i * uStep;
+                float v = j * vStep;
+                texCoords.push_back(glm::vec2(u, v));
+            }
         }
-        //texCoords...
+        
+//         for(int i = 0; i < positions.size(); i++) {
+//            texCoords.push_back(glm::vec2(0.0,0.0));
+//         }
+//        //texCoords...
+//        std::vector<glm::vec2> textureCoords;
+//        for (int j = 0; j < circleXZ.getSegments(); j++)
+//        {
+//            for (int i = 0; i < circleXY.getVertices().size(); i++)
+//            {
+//                // u is the angle around the torus
+//                float u = (float)j / (float)circleXZ.getSegments() * 4.0f;
+//                // v is the angle around the ring segment
+//                float v = (float)i / (float)circleXY.getSegments();
+//                textureCoords.push_back(glm::vec2(u, v));
+//            }
+//        }
+
+        // set texture coordinates for vertices
+//        for (int i = 0; i < positions.size(); i++)
+//        {
+//            texCoords.push_back(textureCoords[i % textureCoords.size()]);
+//        }
 
         // END TODO
 
@@ -158,8 +188,42 @@ namespace cgCourse
         // all adjacent faces so the tangents at these points will not necessarily follow one of the surface edges.
 
         // tangents...
+//        for(int i = 0; i < positions.size(); i++) {
+//            tangents.push_back(glm::vec3(0.0,0.0,0.0));
+//        }
+        for(int i = 0; i < faces.size(); i ++) {
+            int i1 = faces[i].x;
+            int i2 = faces[i].y;
+            int i3 = faces[i].z;
+
+            glm::vec3 p1 = positions[i1];
+            glm::vec3 p2 = positions[i2];
+            glm::vec3 p3 = positions[i3];
+
+            glm::vec2 uv1 = texCoords[i1];
+            glm::vec2 uv2 = texCoords[i2];
+            glm::vec2 uv3 = texCoords[i3];
+
+            glm::vec3 edge1 = p2 - p1;
+            glm::vec3 edge2 = p3 - p1;
+            glm::vec2 deltaUV1 = uv2 - uv1;
+            glm::vec2 deltaUV2 = uv3 - uv1;
+
+            float f = 1.0f / (deltaUV1.x * deltaUV2.y - deltaUV2.x * deltaUV1.y);
+
+            glm::vec3 tangent = glm::normalize(glm::vec3(
+                f * (deltaUV2.y * edge1.x - deltaUV1.y * edge2.x),
+                f * (deltaUV2.y * edge1.y - deltaUV1.y * edge2.y),
+                f * (deltaUV2.y * edge1.z - deltaUV1.y * edge2.z)));
+
+            tangents[i1] += tangent;
+            tangents[i2] += tangent;
+            tangents[i3] += tangent;
+        }
+
+        // normalize tangents
         for(int i = 0; i < positions.size(); i++) {
-            tangents.push_back(glm::vec3(0.0,0.0,0.0));
+            tangents[i] = glm::normalize(tangents[i]);
         }
         // END TODO
     }

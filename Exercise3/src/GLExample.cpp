@@ -72,7 +72,16 @@ namespace cgCourse
 		cubetex = std::make_shared<Texture>();
 		cubetex->loadFromFile(std::string(RES_DIR) + "/container.png");
         // ...
-
+//         cubetexSpec = std::make_shared<Texture>();
+//         cubetexSpec->loadFromFile(std::string(RES_DIR) + "/container_specular.png");
+        cubetexNormal = std::make_shared<Texture>();
+        cubetexNormal->loadFromFile(std::string(RES_DIR) + "/container_normal.jpg");
+        torustex = std::make_shared<Texture>();
+        torustex->loadFromFile(std::string(RES_DIR) + "/brickwall.jpg");
+        torustexSpec = std::make_shared<Texture>();
+        torustexSpec->loadFromFile(std::string(RES_DIR) + "/brickwall_specular.jpg");
+        torustexNormal = std::make_shared<Texture>();
+        torustexNormal->loadFromFile(std::string(RES_DIR) + "/brickwall_normal.jpg");
         // TODO END
 		return true;
 	}
@@ -199,6 +208,17 @@ namespace cgCourse
 		 *       variable in the shader is meant to be which texture layer when
 		 *       used with glActiveTexture.
 		 */
+        
+        glActiveTexture(GL_TEXTURE0);
+        glBindTexture(GL_TEXTURE_2D, cubetex->getTexHandle());
+
+        // Bind texture 1 to the active texture unit GL_TEXTURE1
+        glActiveTexture(GL_TEXTURE1);
+        glBindTexture(GL_TEXTURE_2D, cubetexNormal->getTexHandle());
+
+        // Set the uniform variables in the shader to the correct texture units
+        glUniform1i(programForTexturedShape->getUniformLocation("texMap"), 0);
+        glUniform1i(programForTexturedShape->getUniformLocation("normalMap"), 1);
 
         // End TODO
 
@@ -210,7 +230,11 @@ namespace cgCourse
         /* TODO Task 2 unbind textures by setting all glBindTextures for all active texture layers
 		 *       to zero.
 		 */
+        glActiveTexture(GL_TEXTURE0);
+        glBindTexture(GL_TEXTURE_2D, 0);
 
+        glActiveTexture(GL_TEXTURE1);
+        glBindTexture(GL_TEXTURE_2D, 0);
         // TODO END
 
 		programForTexturedShape->unbind();
@@ -227,6 +251,16 @@ namespace cgCourse
 		 *       variable in the shader is meant to be which texture layer when
 		 *       used with glActiveTexture.
 		 */
+        glActiveTexture(GL_TEXTURE0);
+        glBindTexture(GL_TEXTURE_2D, torustex->getTexHandle());
+
+        // Bind texture 1 to the active texture unit GL_TEXTURE1
+        glActiveTexture(GL_TEXTURE1);
+        glBindTexture(GL_TEXTURE_2D, torustexNormal->getTexHandle());
+
+        // Set the uniform variables in the shader to the correct texture units
+        glUniform1i(programForTexturedShape->getUniformLocation("texMap"), 0);
+        glUniform1i(programForTexturedShape->getUniformLocation("normalMap"), 1);
 
         // TODO END
 
@@ -238,6 +272,11 @@ namespace cgCourse
         /* TODO Task 2 unbind textures by setting all glBindTextures for all active texture layers
 		*       to zero.
 		*/
+        glActiveTexture(GL_TEXTURE0);
+        glBindTexture(GL_TEXTURE_2D, 0);
+
+        glActiveTexture(GL_TEXTURE1);
+        glBindTexture(GL_TEXTURE_2D, 0);
 
         // End TODO
 
@@ -247,6 +286,8 @@ namespace cgCourse
 		if(drawTorusNormals) {
             programForTexturedNormals->bind();
             /* TODO Task 2 Activate and bind the normal texture*/
+            glActiveTexture(GL_TEXTURE0);
+            glBindTexture(GL_TEXTURE_2D, torustexNormal->getTexHandle());
 
             // TODO END
 
@@ -257,7 +298,8 @@ namespace cgCourse
             /* TODO Task 2 unbind normal texture by setting glBindTexture for the active texture layer
             *       to zero.
             */
-
+            glActiveTexture(GL_TEXTURE0);
+            glBindTexture(GL_TEXTURE_2D, 0);
             // TODO END
 
             programForTexturedNormals->unbind();

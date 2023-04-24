@@ -113,8 +113,17 @@ namespace cgCourse
 
         // texCoords->push_back(...
 
+//        for(int i = 0; i < positions.size(); i++) {
+//            texCoords.push_back(glm::vec2(0.0,0.0));
+//        }
         for(int i = 0; i < positions.size(); i++) {
-            texCoords.push_back(glm::vec2(0.0,0.0));
+            float x = positions[i].x;
+            float y = positions[i].y;
+            float z = positions[i].z;
+
+            // map x, y, z coordinates to texture coordinates
+            glm::vec2 texCoord(x, y);
+            texCoords.push_back(texCoord);
         }
 
         //TODO END
@@ -131,10 +140,40 @@ namespace cgCourse
         /* TODO Task 2 add the tangent vectors for the cube here to
          *       to the tangent arrays
          */
-        for(int i = 0; i < positions.size(); i++) {
-            tangents.push_back(glm::vec3(0.0,0.0,0.0));
-        }
+//        for(int i = 0; i < positions.size(); i++) {
+//            tangents.push_back(glm::vec3(0.0,0.0,0.0));
+//        }
         // tangents...
+        for(int i = 0; i < faces.size(); i++) {
+            int i1 = faces[i][0];
+            int i2 = faces[i][1];
+            int i3 = faces[i][2];
+
+            glm::vec3 v1 = positions[i1];
+            glm::vec3 v2 = positions[i2];
+            glm::vec3 v3 = positions[i3];
+
+            glm::vec2 uv1 = texCoords[i1];
+            glm::vec2 uv2 = texCoords[i2];
+            glm::vec2 uv3 = texCoords[i3];
+
+            glm::vec3 deltaPos1 = v2 - v1;
+            glm::vec3 deltaPos2 = v3 - v1;
+
+            glm::vec2 deltaUV1 = uv2 - uv1;
+            glm::vec2 deltaUV2 = uv3 - uv1;
+
+            float r = 1.0f / (deltaUV1.x * deltaUV2.y - deltaUV1.y * deltaUV2.x);
+            glm::vec3 tangent = (deltaPos1 * deltaUV2.y - deltaPos2 * deltaUV1.y)*r;
+
+            tangents[i1] += tangent;
+            tangents[i2] += tangent;
+            tangents[i3] += tangent;
+        }
+
+        for(int i = 0; i < tangents.size(); i++) {
+            tangents[i] = glm::normalize(tangents[i]);
+        }
 
         // TODO END
 	}
