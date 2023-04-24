@@ -116,12 +116,13 @@ namespace cgCourse
 //        for(int i = 0; i < positions.size(); i++) {
 //            texCoords.push_back(glm::vec2(0.0,0.0));
 //        }
+
         for (int i = 0; i < positions.size(); i += 4)
         {
-            for (int j = 0; j < 4; j++)
-            {
-                texCoords.push_back(glm::vec2((j == 0 || j == 3), (j == 1 || j == 2)));
-            }
+            texCoords.push_back(glm::vec2(0.0, 0.0));
+            texCoords.push_back(glm::vec2(0.0, 1.0));
+            texCoords.push_back(glm::vec2(1.0, 1.0));
+            texCoords.push_back(glm::vec2(1.0, 0.0));
         }
 
         //TODO END
