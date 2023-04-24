@@ -4,57 +4,57 @@
 
 namespace cgCourse
 {
-	GLExample::GLExample(glm::uvec2 _windowSize, std::string _title): GLApp(_windowSize, _title, false) {}
+    GLExample::GLExample(glm::uvec2 _windowSize, std::string _title): GLApp(_windowSize, _title, false) {}
 
-	bool GLExample::init()
-	{
-		// Framebuffer size and window size may be different in high-DPI displays
-		// setup camera with standard view (static for our case)
-		cam.create(	getFramebufferSize(),
-					glm::vec3(3, 3, -3),
-					glm::vec3(0, 0, 0),
-					glm::vec3(0, 1, 0)
-					);
+    bool GLExample::init()
+    {
+        // Framebuffer size and window size may be different in high-DPI displays
+        // setup camera with standard view (static for our case)
+        cam.create(	getFramebufferSize(),
+                       glm::vec3(3, 3, -3),
+                       glm::vec3(0, 0, 0),
+                       glm::vec3(0, 1, 0)
+        );
 
         programForTexturedShape = std::make_shared<ShaderProgram>(std::string(SHADER_DIR) + "/TexturedShape");
         programForTexturedNormals = std::make_shared<ShaderProgram>(std::string(SHADER_DIR) + "/TexturedNormals");
-		programForLightBox = std::make_shared<ShaderProgram>(std::string(SHADER_DIR) + "/Lightbox");
+        programForLightBox = std::make_shared<ShaderProgram>(std::string(SHADER_DIR) + "/Lightbox");
         programForBasicShape = std::make_shared<ShaderProgram>(std::string(SHADER_DIR) + "/BasicShape");
         programForBasicNormal = std::make_shared<ShaderProgram>(std::string(SHADER_DIR) + "/BasicNormals");
 
-		// create box for light position
-		lightbox = std::make_shared<Cube>();
-		if(!lightbox->createVertexArray(0, 1, 2, 3, 4))
-			return false;
+        // create box for light position
+        lightbox = std::make_shared<Cube>();
+        if(!lightbox->createVertexArray(0, 1, 2, 3, 4))
+            return false;
 
-		lightbox->setPosition(glm::vec3(0.0, 0.5, -1.0));
-		lightbox->setScaling(glm::vec3(0.05, 0.05, 0.05));
+        lightbox->setPosition(glm::vec3(0.0, 0.5, -1.0));
+        lightbox->setScaling(glm::vec3(0.05, 0.05, 0.05));
 
-		// Init models
+        // Init models
 
         // create textured cube
-		cube = std::make_shared<Cube>();
-		if(!cube->createVertexArray(0, 1, 2, 3, 4))
-			return false;
+        cube = std::make_shared<Cube>();
+        if(!cube->createVertexArray(0, 1, 2, 3, 4))
+            return false;
 
         cube->setPosition(glm::vec3(-2.5, 0.5, 1.5));
         cube->setScaling(glm::vec3(1.5, 1.5, 1.5));
 
         // create torus
-		torus = std::make_shared<Torus>();
-		if(!torus->createVertexArray(0, 1, 2, 3, 4))
-			return false;
+        torus = std::make_shared<Torus>();
+        if(!torus->createVertexArray(0, 1, 2, 3, 4))
+            return false;
 
-		torus->setPosition(glm::vec3(1.5, 0.0, 0.0));
+        torus->setPosition(glm::vec3(1.5, 0.0, 0.0));
 
-		// Init multiline field for normals of objects
-		normalsTorus = std::make_shared<MultiLine>(torus->positions,
+        // Init multiline field for normals of objects
+        normalsTorus = std::make_shared<MultiLine>(torus->positions,
                                                    torus->normals,
                                                    torus->tangents,
                                                    torus->texCoords
-													);
-		if(!normalsTorus->createVertexArray(0, 1, 2, 3, 4))
-			return false;
+        );
+        if(!normalsTorus->createVertexArray(0, 1, 2, 3, 4))
+            return false;
 
 
         /* TODO Task 2 load the following textures here:
@@ -69,7 +69,7 @@ namespace cgCourse
 		 *      texture for the cube. Don't forget to initialize the shared pointers existing
 		 *      already in this class for this purpose.
 		 */
-		cubetex = std::make_shared<Texture>();
+        cubetex = std::make_shared<Texture>();
         cubetexNormal = std::make_shared<Texture>();
         cubetexSpec = std::make_shared<Texture>();
 
@@ -84,96 +84,109 @@ namespace cgCourse
         torustex->loadFromFile(std::string(RES_DIR) + "/brickwall.jpg");
         torustexNormal->loadFromFile(std::string(RES_DIR) + "/brickwall_normal.jpg");
         torustexSpec->loadFromFile(std::string(RES_DIR) + "/brickwall_specular.jpg");
+
         // TODO END
-		return true;
-	}
+        return true;
+    }
 
-	bool GLExample::update()
-	{
-		torus->setRotation(glm::radians(10.0f), glm::vec3(0.0f, 1.0f, 0.0f));
+    bool GLExample::update()
+    {
+        torus->setRotation(glm::radians(10.0f), glm::vec3(0.0f, 1.0f, 0.0f));
 
-		if(animationDir == Forward)
-		{
-			if(animation > 1.5)
-				animationDir = Backward;
-			else
-				animation += 0.01;
-		}
-		else
-		{
-			if(animation < -4.0)
-				animationDir = Forward;
-			else
-				animation -= 0.01;
-		}
+        if(animationDir == Forward)
+        {
+            if(animation > 1.5)
+                animationDir = Backward;
+            else
+                animation += 0.01;
+        }
+        else
+        {
+            if(animation < -4.0)
+                animationDir = Forward;
+            else
+                animation -= 0.01;
+        }
 
-		lightbox->setPosition(glm::vec3(animation, 0.5, -0.5));
+        lightbox->setPosition(glm::vec3(animation, 0.5, -0.5));
 
-		return true;
-	}
+        return true;
+    }
 
-	bool GLExample::render()
-	{
-		glEnable(GL_DEPTH_TEST);
+    bool GLExample::render()
+    {
+        glEnable(GL_DEPTH_TEST);
 
-		// Clear the color and depth buffers
-		glClearColor(0.2f, 0.2f, 0.2f, 1.0f);
-		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-		glEnable(GL_CULL_FACE);
-		glCullFace(GL_BACK);
+        // Clear the color and depth buffers
+        glClearColor(0.2f, 0.2f, 0.2f, 1.0f);
+        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+        glEnable(GL_CULL_FACE);
+        glCullFace(GL_BACK);
 
-		update();
+        update();
 
-		renderLightBox();
+        renderLightBox();
 
         // TODO Task 1 add the light information to the programs requiring it
-        // bind the Gouraud program for the cube
-        addLightVariables(programForBasicShape);
-        // TODO END
 
         if (renderMode == GOURAUD_SHADING || renderMode == PHONG_SHADING) {
+            addLightVariables(programForBasicShape);
             renderBasicCube();
             renderBasicTorus();
         } else {
+            addLightVariables(programForTexturedShape);
             renderTexturedCube();
             renderTexturedTorus();
         }
-		return true;
-	}
+
+        // TODO END
+        return true;
+    }
 
     /* TODO Task 1 update this function to set the light information for the
 	 * shaders. Don't forget that shader have to be bound before shader uniform can be set
      * The light color is available in lightColor
 	 */
-	void GLExample::addLightVariables(const std::shared_ptr<ShaderProgram> & program)
-	{
+    void GLExample::addLightVariables(const std::shared_ptr<ShaderProgram> & program)
+    {
         program->bind();
-        
+
         glUniform3fv(
-             program->getUniformLocation("light.position"),
-             1,
-             &lightbox->getPosition()[0]
+                program->getUniformLocation("light.position"),
+                1,
+                &lightbox->getPosition()[0]
         );
-        
+
         glUniform3fv(
-             program->getUniformLocation("camPos"),
-             1,
-             &cam.getPosition()[0]
-         );
-        
+                program->getUniformLocation("camPos"),
+                1,
+                &cam.getPosition()[0]
+        );
+
         glUniform3fv(
-                 program->getUniformLocation("light.color"),
-                 1,
-                 lightColor
-         );
-        
+                program->getUniformLocation("light.color"),
+                1,
+                lightColor
+        );
+
         program->unbind();
-	}
+    }
     // END TODO
 
     void GLExample::renderBasicCube() {
         programForBasicShape->bind();
         mvpMatrix = cam.getViewProjectionMatrix() * cube->getModelMatrix();
+
+        // Material
+        GLfloat ambient[3] ={0.6f,0.6f,0.6f};
+        GLfloat diffuse[3] ={0.6f,0.6f,0.6f};
+        GLfloat specular[3] ={0.6f,0.6f,0.6f};
+
+        glUniform3fv(programForBasicShape->getUniformLocation("material.ambient"),1,ambient);
+        glUniform3fv(programForBasicShape->getUniformLocation("material.diffuse"),1,diffuse);
+        glUniform3fv(programForBasicShape->getUniformLocation("material.specular"),1,specular);
+        glUniform1f(programForBasicShape->getUniformLocation("material.shininess"),float(16.0));
+
         glUniformMatrix4fv(programForBasicShape->getUniformLocation("mvpMatrix"), 1, GL_FALSE, &mvpMatrix[0][0]);
         glUniformMatrix4fv(programForBasicShape->getUniformLocation("modelMatrix"), 1, GL_FALSE, &cube->getModelMatrix()[0][0]);
         glUniform1i(programForBasicShape->getUniformLocation("gouraudShading"), renderMode == GOURAUD_SHADING);
@@ -184,6 +197,17 @@ namespace cgCourse
     void GLExample::renderBasicTorus() {
         programForBasicShape->bind();
         mvpMatrix = cam.getViewProjectionMatrix() * torus->getModelMatrix();
+
+        // Material
+        GLfloat ambient[3] ={0.6f,0.6f,0.6f};
+        GLfloat diffuse[3] ={0.6f,0.6f,0.6f};
+        GLfloat specular[3] ={0.6f,0.6f,0.6f};
+
+        glUniform3fv(programForBasicShape->getUniformLocation("material.ambient"),1,ambient);
+        glUniform3fv(programForBasicShape->getUniformLocation("material.diffuse"),1,diffuse);
+        glUniform3fv(programForBasicShape->getUniformLocation("material.specular"),1,specular);
+        glUniform1f(programForBasicShape->getUniformLocation("material.shininess"),float(16.0));
+
         glUniformMatrix4fv(programForBasicShape->getUniformLocation("mvpMatrix"), 1, GL_FALSE, &mvpMatrix[0][0]);
         glUniformMatrix4fv(programForBasicShape->getUniformLocation("modelMatrix"), 1, GL_FALSE, &torus->getModelMatrix()[0][0]);
         glUniform1i(programForBasicShape->getUniformLocation("gouraudShading"), renderMode == GOURAUD_SHADING);
@@ -199,9 +223,9 @@ namespace cgCourse
         }
     }
 
-	void GLExample::renderTexturedCube()
-	{
-		programForTexturedShape->bind();
+    void GLExample::renderTexturedCube()
+    {
+        programForTexturedShape->bind();
 
         /* TODO Task 2 bind textures for shaders with glBindTexture and glActiveTexture.
 		 *       check the OpenGL documentation to understand these commands.
@@ -210,42 +234,40 @@ namespace cgCourse
 		 *       variable in the shader is meant to be which texture layer when
 		 *       used with glActiveTexture.
 		 */
-        
+
         glActiveTexture(GL_TEXTURE0);
         glBindTexture(GL_TEXTURE_2D, cubetex->getTexHandle());
 
-        // Bind texture 1 to the active texture unit GL_TEXTURE1
         glActiveTexture(GL_TEXTURE1);
         glBindTexture(GL_TEXTURE_2D, cubetexNormal->getTexHandle());
 
         glActiveTexture(GL_TEXTURE2);
         glBindTexture(GL_TEXTURE_2D, cubetexSpec->getTexHandle());
 
-        // Set the uniform variables in the shader to the correct texture units
         glUniform1i(programForTexturedShape->getUniformLocation("texMap"), 0);
         glUniform1i(programForTexturedShape->getUniformLocation("normalMap"), 1);
         glUniform1i(programForTexturedShape->getUniformLocation("specMap"), 2);
 
         // Material
-        GLfloat ambient[3] = {0.6f,0.6f,0.6f};
-        GLfloat diffuse[3] = {0.6f,0.6f,0.6f};
-        GLfloat specular[3] = {0.6f,0.6f,0.6f};
+        GLfloat ambient[3] ={0.6f,0.6f,0.6f};
+        GLfloat diffuse[3] ={0.6f,0.6f,0.6f};
+        GLfloat specular[3] ={0.6f,0.6f,0.6f};
 
-        glUniform3fv(programForTexturedShape->getUniformLocation("material.ambient"),1,ambient);
-        glUniform3fv(programForTexturedShape->getUniformLocation("material.diffuse"),1,diffuse);
-        glUniform3fv(programForTexturedShape->getUniformLocation("material.specular"),1,specular);
-        glUniform1f(programForTexturedShape->getUniformLocation("material.shininess"),float(16.0));
-
+        glUniform3fv(programForBasicShape->getUniformLocation("material.ambient"),1,ambient);
+        glUniform3fv(programForBasicShape->getUniformLocation("material.diffuse"),1,diffuse);
+        glUniform3fv(programForBasicShape->getUniformLocation("material.specular"),1,specular);
+        glUniform1f(programForBasicShape->getUniformLocation("material.shininess"),float(16.0));
         // End TODO
 
         mvpMatrix = cam.getViewProjectionMatrix() * cube->getModelMatrix();
-		glUniformMatrix4fv(programForTexturedShape->getUniformLocation("modelMatrix"), 1, GL_FALSE, &cube->getModelMatrix()[0][0]);
-		glUniformMatrix4fv(programForTexturedShape->getUniformLocation("mvpMatrix"), 1, GL_FALSE, &mvpMatrix[0][0]);
-		cube->draw();
+        glUniformMatrix4fv(programForTexturedShape->getUniformLocation("modelMatrix"), 1, GL_FALSE, &cube->getModelMatrix()[0][0]);
+        glUniformMatrix4fv(programForTexturedShape->getUniformLocation("mvpMatrix"), 1, GL_FALSE, &mvpMatrix[0][0]);
+        cube->draw();
 
         /* TODO Task 2 unbind textures by setting all glBindTextures for all active texture layers
 		 *       to zero.
 		 */
+
         glActiveTexture(GL_TEXTURE0);
         glBindTexture(GL_TEXTURE_2D, 0);
 
@@ -254,14 +276,15 @@ namespace cgCourse
 
         glActiveTexture(GL_TEXTURE2);
         glBindTexture(GL_TEXTURE_2D, 0);
+
         // TODO END
 
-		programForTexturedShape->unbind();
-	}
+        programForTexturedShape->unbind();
+    }
 
-	void GLExample::renderTexturedTorus()
-	{
-		programForTexturedShape->bind();
+    void GLExample::renderTexturedTorus()
+    {
+        programForTexturedShape->bind();
 
         /* TODO Task 2 bind textures for shaders with glBindTexture and glActiveTexture.
 		 *       check the OpenGL documentation to understand these commands.
@@ -272,39 +295,36 @@ namespace cgCourse
 		 */
         glActiveTexture(GL_TEXTURE0);
         glBindTexture(GL_TEXTURE_2D, torustex->getTexHandle());
+        glUniform1i(programForTexturedShape->getUniformLocation("texMap"), 0);
 
-        // Bind texture 1 to the active texture unit GL_TEXTURE1
         glActiveTexture(GL_TEXTURE1);
         glBindTexture(GL_TEXTURE_2D, torustexNormal->getTexHandle());
+        glUniform1i(programForTexturedShape->getUniformLocation("normalMap"), 1);
 
         glActiveTexture(GL_TEXTURE2);
         glBindTexture(GL_TEXTURE_2D, torustexSpec->getTexHandle());
-
-        // Set the uniform variables in the shader to the correct texture units
-        glUniform1i(programForTexturedShape->getUniformLocation("texMap"), 0);
-        glUniform1i(programForTexturedShape->getUniformLocation("normalMap"), 1);
         glUniform1i(programForTexturedShape->getUniformLocation("specMap"), 2);
 
         // Material
-        GLfloat ambient[3] = {0.6f,0.6f,0.6f};
-        GLfloat diffuse[3] = {0.6f,0.6f,0.6f};
-        GLfloat specular[3] = {0.6f,0.6f,0.6f};
+        GLfloat ambient[3] ={0.6f,0.6f,0.6f};
+        GLfloat diffuse[3] ={0.6f,0.6f,0.6f};
+        GLfloat specular[3] ={0.6f,0.6f,0.6f};
 
         glUniform3fv(programForTexturedShape->getUniformLocation("material.ambient"),1,ambient);
         glUniform3fv(programForTexturedShape->getUniformLocation("material.diffuse"),1,diffuse);
         glUniform3fv(programForTexturedShape->getUniformLocation("material.specular"),1,specular);
         glUniform1f(programForTexturedShape->getUniformLocation("material.shininess"),float(16.0));
 
-        // TODO END
-
-		mvpMatrix = cam.getViewProjectionMatrix() * torus->getModelMatrix();
-		glUniformMatrix4fv(programForTexturedShape->getUniformLocation("modelMatrix"), 1, GL_FALSE, &torus->getModelMatrix()[0][0]);
-		glUniformMatrix4fv(programForTexturedShape->getUniformLocation("mvpMatrix"), 1, GL_FALSE, &mvpMatrix[0][0]);
-		torus->draw();
+        // End TODO
+        mvpMatrix = cam.getViewProjectionMatrix() * torus->getModelMatrix();
+        glUniformMatrix4fv(programForTexturedShape->getUniformLocation("modelMatrix"), 1, GL_FALSE, &torus->getModelMatrix()[0][0]);
+        glUniformMatrix4fv(programForTexturedShape->getUniformLocation("mvpMatrix"), 1, GL_FALSE, &mvpMatrix[0][0]);
+        torus->draw();
 
         /* TODO Task 2 unbind textures by setting all glBindTextures for all active texture layers
 		*       to zero.
 		*/
+
         glActiveTexture(GL_TEXTURE0);
         glBindTexture(GL_TEXTURE_2D, 0);
 
@@ -316,14 +336,12 @@ namespace cgCourse
 
         // End TODO
 
-		programForTexturedShape->unbind();
+        programForTexturedShape->unbind();
 
 
-		if(drawTorusNormals) {
+        if(drawTorusNormals) {
             programForTexturedNormals->bind();
             /* TODO Task 2 Activate and bind the normal texture*/
-            glActiveTexture(GL_TEXTURE0);
-            glBindTexture(GL_TEXTURE_2D, torustexNormal->getTexHandle());
 
             // TODO END
 
@@ -334,30 +352,29 @@ namespace cgCourse
             /* TODO Task 2 unbind normal texture by setting glBindTexture for the active texture layer
             *       to zero.
             */
-            glActiveTexture(GL_TEXTURE0);
-            glBindTexture(GL_TEXTURE_2D, 0);
+
             // TODO END
 
             programForTexturedNormals->unbind();
         }
-	}
+    }
 
-	void GLExample::renderLightBox()
-	{
-		programForLightBox->bind();
-		mvpMatrix = cam.getViewProjectionMatrix() * lightbox->getModelMatrix();
-		glUniform3fv(programForLightBox->getUniformLocation("objectColor"), 1, &lightColor[0]);
-		glUniformMatrix4fv(programForLightBox->getUniformLocation("mvpMatrix"), 1, GL_FALSE, &mvpMatrix[0][0]);
-		lightbox->draw();
-		programForLightBox->unbind();
-	}
+    void GLExample::renderLightBox()
+    {
+        programForLightBox->bind();
+        mvpMatrix = cam.getViewProjectionMatrix() * lightbox->getModelMatrix();
+        glUniform3fv(programForLightBox->getUniformLocation("objectColor"), 1, &lightColor[0]);
+        glUniformMatrix4fv(programForLightBox->getUniformLocation("mvpMatrix"), 1, GL_FALSE, &mvpMatrix[0][0]);
+        lightbox->draw();
+        programForLightBox->unbind();
+    }
 
-	bool GLExample::end()
-	{
-		programForTexturedShape->deleteShaderProgramFromGPU();
-		programForTexturedNormals->deleteShaderProgramFromGPU();
-		return true;
-	}
+    bool GLExample::end()
+    {
+        programForTexturedShape->deleteShaderProgramFromGPU();
+        programForTexturedNormals->deleteShaderProgramFromGPU();
+        return true;
+    }
 
     void GLExample::imgui()
     {
@@ -380,4 +397,3 @@ namespace cgCourse
         ImGui::End();
     }
 }
-
