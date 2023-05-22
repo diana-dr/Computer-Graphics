@@ -1,0 +1,6 @@
+/Users/dianadragos/Desktop/Computer Graphics/Exercise4/cmake-build-debug/CMakeFiles/exercise.dir
+/Users/dianadragos/Desktop/Computer Graphics/Exercise4/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/dianadragos/Desktop/Computer Graphics/Exercise4/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/dianadragos/Desktop/Computer Graphics/Exercise4/cmake-build-debug/imgui/CMakeFiles/imgui.dir
+/Users/dianadragos/Desktop/Computer Graphics/Exercise4/cmake-build-debug/imgui/CMakeFiles/edit_cache.dir
+/Users/dianadragos/Desktop/Computer Graphics/Exercise4/cmake-build-debug/imgui/CMakeFiles/rebuild_cache.dir

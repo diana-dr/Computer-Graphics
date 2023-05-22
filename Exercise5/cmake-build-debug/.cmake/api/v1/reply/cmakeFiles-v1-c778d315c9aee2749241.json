@@ -1,0 +1,433 @@
+{
+	"inputs" : 
+	[
+		{
+			"path" : "CMakeLists.txt"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/3.25.2/CMakeSystem.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/dianadragos/Desktop/Computer Graphics/vcpkg/scripts/buildsystems/vcpkg.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeDependentOption.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeSystemSpecificInitialize.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/Darwin-Initialize.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/3.25.2/CMakeCCompiler.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/3.25.2/CMakeCXXCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeSystemSpecificInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeGenericSystem.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeInitializeConfigs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/Darwin.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/UnixPaths.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeCInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeLanguageInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/AppleClang-C.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/Clang.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/Apple-AppleClang-C.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/Apple-Clang-C.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/Apple-Clang.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeCommonLanguageInclude.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeCXXInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeLanguageInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/AppleClang-CXX.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/Clang.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/Apple-AppleClang-CXX.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/Apple-Clang-CXX.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/Apple-Clang.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeCommonLanguageInclude.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/share/glew/vcpkg-cmake-wrapper.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/SelectLibraryConfigurations.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/share/glew/glew-config.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/share/glew/glew-targets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/share/glew/glew-targets-debug.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/share/glew/glew-targets-release.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/share/glew/CopyImportedTargetProperties.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/share/glfw3/glfw3ConfigVersion.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/share/glfw3/glfw3Config.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/share/glfw3/glfw3Targets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/share/glfw3/glfw3Targets-debug.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/share/glfw3/glfw3Targets-release.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/FindOpenGL.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/FindPackageHandleStandardArgs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/FindPackageMessage.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/share/glm/glm-config.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/share/assimp/assimpConfigVersion.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/share/assimp/assimpConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/share/pugixml/pugixml-config-version.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/share/pugixml/pugixml-config.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/share/pugixml/pugixml-targets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/share/pugixml/pugixml-targets-debug.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/share/pugixml/pugixml-targets-release.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/share/kubazip/kubazipConfigVersion.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/share/kubazip/kubazipConfig.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/share/kubazip/kubazipTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/share/kubazip/kubazipTargets-debug.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/share/kubazip/kubazipTargets-release.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/share/minizip/minizipConfigVersion.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/share/minizip/minizipConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/share/zlib/vcpkg-cmake-wrapper.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/FindZLIB.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/SelectLibraryConfigurations.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/FindPackageHandleStandardArgs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/FindPackageMessage.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/share/minizip/minizipTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/share/minizip/minizipTargets-debug.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/share/minizip/minizipTargets-release.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/share/poly2tri/poly2triConfig.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/share/poly2tri/poly2triConfig-debug.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/share/poly2tri/poly2triConfig-release.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/share/rapidjson/RapidJSONConfigVersion.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/share/rapidjson/RapidJSONConfig.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/share/stb/vcpkg-cmake-wrapper.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/share/stb/FindStb.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/FindPackageHandleStandardArgs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/FindPackageMessage.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/SelectLibraryConfigurations.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/share/utf8cpp/utf8cppConfigVersion.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/share/utf8cpp/utf8cppConfig.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/share/utf8cpp/utf8cppTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/share/zlib/vcpkg-cmake-wrapper.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/FindZLIB.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/FindPackageHandleStandardArgs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/FindPackageMessage.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/share/assimp/assimpTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/share/assimp/assimpTargets-debug.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/share/assimp/assimpTargets-release.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/share/cimg/CImgConfig.cmake"
+		},
+		{
+			"path" : "imgui/CMakeLists.txt"
+		}
+	],
+	"kind" : "cmakeFiles",
+	"paths" : 
+	{
+		"build" : "/Users/dianadragos/Desktop/Computer Graphics/Exercise5/cmake-build-debug",
+		"source" : "/Users/dianadragos/Desktop/Computer Graphics/Exercise5"
+	},
+	"version" : 
+	{
+		"major" : 1,
+		"minor" : 0
+	}
+}

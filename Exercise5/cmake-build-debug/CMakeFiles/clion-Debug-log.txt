@@ -1,0 +1,7 @@
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/ninja -G Ninja -S "/Users/dianadragos/Desktop/Computer Graphics/Exercise5" -B "/Users/dianadragos/Desktop/Computer Graphics/Exercise5/cmake-build-debug"
+-- Found ZLIB: optimized;/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/lib/libz.a;debug;/Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/debug/lib/libz.a (found version "1.2.13") 
+-- RapidJSON found. Headers: /Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/share/rapidjson/../../include
+-- Found Stb: /Users/dianadragos/Desktop/Computer Graphics/vcpkg/installed/arm64-osx/include  
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/dianadragos/Desktop/Computer Graphics/Exercise5/cmake-build-debug

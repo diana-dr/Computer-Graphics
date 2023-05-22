@@ -1,0 +1,24 @@
+# ninja log v5
+0	841	1684776890702404584	CMakeFiles/exercise_5.dir/src/Camera.cpp.o	472aea176eadec3f
+3	843	1684776890702874961	CMakeFiles/exercise_5.dir/src/Cube.cpp.o	76cb7c6f7da0a7d1
+3	843	1684776890703246671	CMakeFiles/exercise_5.dir/src/Drawable.cpp.o	d1a503ceead752d8
+3	844	1684776890626182568	CMakeFiles/exercise_5.dir/src/DrawableShape.cpp.o	2de0f5337263b2be
+7	844	1684776890688833439	CMakeFiles/exercise_5.dir/src/FrameBuffer.cpp.o	580d67498d09df13
+7	845	1684776890701988249	CMakeFiles/exercise_5.dir/src/GLApp.cpp.o	3bd6307aaac944f6
+843	1407	1684776891269786430	CMakeFiles/exercise_5.dir/src/InputManager.cpp.o	132f8450e910ac67
+845	1440	1684776891307651936	CMakeFiles/exercise_5.dir/src/Shape.cpp.o	b4843650c315b72a
+843	1468	1684776891335886315	CMakeFiles/exercise_5.dir/src/Gui.cpp.o	3fdf1047020b8f3d
+842	1575	1684776891443057389	CMakeFiles/exercise_5.dir/src/GLExample.cpp.o	537dbd1f9c6bd090
+844	1587	1684776891455282487	CMakeFiles/exercise_5.dir/src/Mesh.cpp.o	7859f41401349e9e
+844	1708	1684776891576862835	CMakeFiles/exercise_5.dir/src/ShaderProgram.cpp.o	2d664eab1bd5715
+1575	1881	1684776891751930802	imgui/CMakeFiles/imgui.dir/imgui_demo.cpp.o	8b0855a0b7c055d7
+1588	1913	1684776891783716323	imgui/CMakeFiles/imgui.dir/imgui_draw.cpp.o	941373b79eccb2d8
+1881	1943	1684776891813836460	imgui/CMakeFiles/imgui.dir/imgui_impl_opengl3.cpp.o	5751238afceb49c1
+1440	1984	1684776891853928019	CMakeFiles/exercise_5.dir/src/main.cpp.o	28b0739941b6cd8d
+1708	2059	1684776891926385142	imgui/CMakeFiles/imgui.dir/imgui_impl_glfw.cpp.o	16b6731eb5e299a2
+1468	2096	1684776891966089324	imgui/CMakeFiles/imgui.dir/imgui.cpp.o	c2dcdd7f1f42792d
+1913	2130	1684776892001470610	imgui/CMakeFiles/imgui.dir/imgui_tables.cpp.o	972558b8b719aefa
+1943	2282	1684776892153065721	imgui/CMakeFiles/imgui.dir/imgui_widgets.cpp.o	ef7ac109cb1c92b5
+2282	2323	1684776892196113000	imgui/libimgui.a	2dd1db8f9d11bc40
+1408	2588	1684776892456396650	CMakeFiles/exercise_5.dir/src/Texture.cpp.o	6f270b4b6699d91c
+2588	3385	1684776893252333958	exercise_5	60be02104402ace

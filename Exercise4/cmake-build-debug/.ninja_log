@@ -1,0 +1,26 @@
+# ninja log v5
+0	773	1683115658715980120	CMakeFiles/exercise.dir/src/Camera.cpp.o	ce8a62b67a1121b6
+1	775	1683115658714468018	CMakeFiles/exercise.dir/src/GLApp.cpp.o	31047c8b979f8a4a
+1	780	1683115658723867046	CMakeFiles/exercise.dir/src/MultiLine.cpp.o	92053da27090f74c
+1	794	1683115658737821879	CMakeFiles/exercise.dir/src/ShaderProgram.cpp.o	49505a682874b0af
+1	847	1683115658790242917	CMakeFiles/exercise.dir/src/GLExample.cpp.o	2053ba3138838b81
+1	848	1683115658789698702	CMakeFiles/exercise.dir/src/Cube.cpp.o	ffbdd41c4bdac2df
+774	1082	1683115659025486083	CMakeFiles/exercise.dir/src/Shape.cpp.o	ee828cf12d2466f9
+848	1103	1683115659047517844	imgui/CMakeFiles/imgui.dir/imgui_demo.cpp.o	b9ada60afc004d34
+795	1193	1683115659136413024	CMakeFiles/exercise.dir/src/main.cpp.o	65de2a5d74cb564a
+780	1239	1683115659180996761	CMakeFiles/exercise.dir/src/Torus.cpp.o	f4304f5aa1955299
+1193	1245	1683115659189628655	imgui/CMakeFiles/imgui.dir/imgui_impl_opengl3.cpp.o	87057dde579242c4
+1082	1413	1683115659356884431	imgui/CMakeFiles/imgui.dir/imgui_draw.cpp.o	f2ce731fcc41e678
+847	1435	1683115659379242196	imgui/CMakeFiles/imgui.dir/imgui.cpp.o	7339957765d92f6
+1239	1450	1683115659395011842	imgui/CMakeFiles/imgui.dir/imgui_tables.cpp.o	7782e0cd0b300e0c
+1103	1468	1683115659412079336	imgui/CMakeFiles/imgui.dir/imgui_impl_glfw.cpp.o	2d839d31df1f83bc
+1245	1606	1683115659550539562	imgui/CMakeFiles/imgui.dir/imgui_widgets.cpp.o	eaef9b6482c7893e
+1606	1703	1683115659650010000	imgui/libimgui.a	2dd1db8f9d11bc40
+775	1927	1683115659870068311	CMakeFiles/exercise.dir/src/Texture.cpp.o	9a323fa42a06e9c0
+1927	2083	1683115660028124811	exercise	a6889d2542146baa
+5	604	1683117428821286919	CMakeFiles/exercise.dir/src/GLExample.cpp.o	2053ba3138838b81
+604	794	1683117429012164599	exercise	a6889d2542146baa
+5	699	1683117789477837515	CMakeFiles/exercise.dir/src/GLExample.cpp.o	2053ba3138838b81
+699	876	1683117789657193755	exercise	a6889d2542146baa
+5	659	1683117977996237926	CMakeFiles/exercise.dir/src/GLExample.cpp.o	2053ba3138838b81
+659	822	1683117978162797554	exercise	a6889d2542146baa
